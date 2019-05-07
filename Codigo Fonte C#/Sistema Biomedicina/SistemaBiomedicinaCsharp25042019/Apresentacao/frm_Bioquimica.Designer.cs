@@ -122,7 +122,7 @@
             this.btnSelecionarColaBio.Location = new System.Drawing.Point(352, 44);
             this.btnSelecionarColaBio.Name = "btnSelecionarColaBio";
             this.btnSelecionarColaBio.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarColaBio.TabIndex = 196;
+            this.btnSelecionarColaBio.TabIndex = 2;
             this.btnSelecionarColaBio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarColaBio.UseVisualStyleBackColor = false;
             this.btnSelecionarColaBio.Click += new System.EventHandler(this.btnSelecionarColaBio_Click);
@@ -186,7 +186,7 @@
             this.btnSelecionarPac.Location = new System.Drawing.Point(352, 73);
             this.btnSelecionarPac.Name = "btnSelecionarPac";
             this.btnSelecionarPac.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarPac.TabIndex = 190;
+            this.btnSelecionarPac.TabIndex = 3;
             this.btnSelecionarPac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarPac.UseVisualStyleBackColor = false;
             this.btnSelecionarPac.Click += new System.EventHandler(this.btnSelecionarPac_Click);
@@ -206,7 +206,7 @@
             this.mskData.Mask = "00/00/0000";
             this.mskData.Name = "mskData";
             this.mskData.Size = new System.Drawing.Size(64, 20);
-            this.mskData.TabIndex = 183;
+            this.mskData.TabIndex = 4;
             this.mskData.ValidatingType = typeof(System.DateTime);
             // 
             // txtNdia
@@ -214,7 +214,7 @@
             this.txtNdia.Location = new System.Drawing.Point(304, 100);
             this.txtNdia.Name = "txtNdia";
             this.txtNdia.Size = new System.Drawing.Size(42, 20);
-            this.txtNdia.TabIndex = 184;
+            this.txtNdia.TabIndex = 5;
             // 
             // txtNome
             // 
@@ -258,6 +258,7 @@
             // 
             // btnAlterarBio
             // 
+            this.btnAlterarBio.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarBio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarBio.Location = new System.Drawing.Point(326, 360);
@@ -266,34 +267,36 @@
             this.btnAlterarBio.TabIndex = 157;
             this.btnAlterarBio.Text = "Alterar";
             this.btnAlterarBio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarBio.UseVisualStyleBackColor = true;
+            this.btnAlterarBio.UseVisualStyleBackColor = false;
             this.btnAlterarBio.Click += new System.EventHandler(this.btnAlterarBio_Click);
             // 
             // btnNovo
             // 
+            this.btnNovo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Location = new System.Drawing.Point(78, 360);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 30);
-            this.btnNovo.TabIndex = 158;
+            this.btnNovo.TabIndex = 1;
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(204, 360);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(97, 30);
-            this.btnSalvar.TabIndex = 156;
+            this.btnSalvar.TabIndex = 27;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtPhos
@@ -302,7 +305,7 @@
             this.txtPhos.Multiline = true;
             this.txtPhos.Name = "txtPhos";
             this.txtPhos.Size = new System.Drawing.Size(44, 20);
-            this.txtPhos.TabIndex = 155;
+            this.txtPhos.TabIndex = 26;
             // 
             // txtBhcg
             // 
@@ -310,7 +313,7 @@
             this.txtBhcg.Multiline = true;
             this.txtBhcg.Name = "txtBhcg";
             this.txtBhcg.Size = new System.Drawing.Size(44, 20);
-            this.txtBhcg.TabIndex = 154;
+            this.txtBhcg.TabIndex = 25;
             // 
             // txtDhl
             // 
@@ -318,7 +321,7 @@
             this.txtDhl.Multiline = true;
             this.txtDhl.Name = "txtDhl";
             this.txtDhl.Size = new System.Drawing.Size(44, 20);
-            this.txtDhl.TabIndex = 153;
+            this.txtDhl.TabIndex = 24;
             // 
             // txtAcur
             // 
@@ -326,7 +329,7 @@
             this.txtAcur.Multiline = true;
             this.txtAcur.Name = "txtAcur";
             this.txtAcur.Size = new System.Drawing.Size(44, 20);
-            this.txtAcur.TabIndex = 152;
+            this.txtAcur.TabIndex = 23;
             // 
             // txtCpk
             // 
@@ -334,7 +337,7 @@
             this.txtCpk.Multiline = true;
             this.txtCpk.Name = "txtCpk";
             this.txtCpk.Size = new System.Drawing.Size(44, 20);
-            this.txtCpk.TabIndex = 151;
+            this.txtCpk.TabIndex = 22;
             // 
             // txtAlb
             // 
@@ -342,7 +345,7 @@
             this.txtAlb.Multiline = true;
             this.txtAlb.Name = "txtAlb";
             this.txtAlb.Size = new System.Drawing.Size(44, 20);
-            this.txtAlb.TabIndex = 150;
+            this.txtAlb.TabIndex = 21;
             // 
             // txtCalcio
             // 
@@ -350,7 +353,7 @@
             this.txtCalcio.Multiline = true;
             this.txtCalcio.Name = "txtCalcio";
             this.txtCalcio.Size = new System.Drawing.Size(44, 20);
-            this.txtCalcio.TabIndex = 149;
+            this.txtCalcio.TabIndex = 20;
             // 
             // Label22
             // 
@@ -428,7 +431,7 @@
             this.txtFal.Multiline = true;
             this.txtFal.Name = "txtFal";
             this.txtFal.Size = new System.Drawing.Size(44, 20);
-            this.txtFal.TabIndex = 148;
+            this.txtFal.TabIndex = 19;
             // 
             // txtClor
             // 
@@ -436,7 +439,7 @@
             this.txtClor.Multiline = true;
             this.txtClor.Name = "txtClor";
             this.txtClor.Size = new System.Drawing.Size(44, 20);
-            this.txtClor.TabIndex = 147;
+            this.txtClor.TabIndex = 18;
             // 
             // txtProt
             // 
@@ -444,7 +447,7 @@
             this.txtProt.Multiline = true;
             this.txtProt.Name = "txtProt";
             this.txtProt.Size = new System.Drawing.Size(44, 20);
-            this.txtProt.TabIndex = 146;
+            this.txtProt.TabIndex = 17;
             // 
             // txtFerro
             // 
@@ -452,7 +455,7 @@
             this.txtFerro.Multiline = true;
             this.txtFerro.Name = "txtFerro";
             this.txtFerro.Size = new System.Drawing.Size(44, 20);
-            this.txtFerro.TabIndex = 145;
+            this.txtFerro.TabIndex = 16;
             // 
             // txtTgp
             // 
@@ -460,7 +463,7 @@
             this.txtTgp.Multiline = true;
             this.txtTgp.Name = "txtTgp";
             this.txtTgp.Size = new System.Drawing.Size(44, 20);
-            this.txtTgp.TabIndex = 144;
+            this.txtTgp.TabIndex = 15;
             // 
             // txtTgo
             // 
@@ -468,7 +471,7 @@
             this.txtTgo.Multiline = true;
             this.txtTgo.Name = "txtTgo";
             this.txtTgo.Size = new System.Drawing.Size(44, 20);
-            this.txtTgo.TabIndex = 143;
+            this.txtTgo.TabIndex = 14;
             // 
             // txtBild
             // 
@@ -476,7 +479,7 @@
             this.txtBild.Multiline = true;
             this.txtBild.Name = "txtBild";
             this.txtBild.Size = new System.Drawing.Size(44, 20);
-            this.txtBild.TabIndex = 142;
+            this.txtBild.TabIndex = 13;
             // 
             // Label14
             // 
@@ -554,7 +557,7 @@
             this.txtCrea.Multiline = true;
             this.txtCrea.Name = "txtCrea";
             this.txtCrea.Size = new System.Drawing.Size(44, 20);
-            this.txtCrea.TabIndex = 168;
+            this.txtCrea.TabIndex = 12;
             // 
             // txtdhe
             // 
@@ -562,7 +565,7 @@
             this.txtdhe.Multiline = true;
             this.txtdhe.Name = "txtdhe";
             this.txtdhe.Size = new System.Drawing.Size(44, 20);
-            this.txtdhe.TabIndex = 167;
+            this.txtdhe.TabIndex = 11;
             // 
             // txtVidl
             // 
@@ -570,7 +573,7 @@
             this.txtVidl.Multiline = true;
             this.txtVidl.Name = "txtVidl";
             this.txtVidl.Size = new System.Drawing.Size(44, 20);
-            this.txtVidl.TabIndex = 141;
+            this.txtVidl.TabIndex = 10;
             // 
             // txtLdl
             // 
@@ -578,7 +581,7 @@
             this.txtLdl.Multiline = true;
             this.txtLdl.Name = "txtLdl";
             this.txtLdl.Size = new System.Drawing.Size(44, 20);
-            this.txtLdl.TabIndex = 140;
+            this.txtLdl.TabIndex = 9;
             // 
             // txtHdl
             // 
@@ -586,7 +589,7 @@
             this.txtHdl.Multiline = true;
             this.txtHdl.Name = "txtHdl";
             this.txtHdl.Size = new System.Drawing.Size(44, 20);
-            this.txtHdl.TabIndex = 139;
+            this.txtHdl.TabIndex = 8;
             // 
             // txtTri
             // 
@@ -594,7 +597,7 @@
             this.txtTri.Multiline = true;
             this.txtTri.Name = "txtTri";
             this.txtTri.Size = new System.Drawing.Size(44, 20);
-            this.txtTri.TabIndex = 138;
+            this.txtTri.TabIndex = 7;
             // 
             // txtCol
             // 
@@ -602,7 +605,7 @@
             this.txtCol.Multiline = true;
             this.txtCol.Name = "txtCol";
             this.txtCol.Size = new System.Drawing.Size(44, 20);
-            this.txtCol.TabIndex = 137;
+            this.txtCol.TabIndex = 6;
             // 
             // Label12
             // 
@@ -689,6 +692,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(498, 406);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.txtIdcola);
@@ -752,7 +756,10 @@
             this.Controls.Add(this.Label5);
             this.Controls.Add(this.Label6);
             this.Controls.Add(this.Label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_Bioquimica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bioquimica";
             this.Load += new System.EventHandler(this.frm_Biomedicina_Load);
             this.ResumeLayout(false);
@@ -778,7 +785,6 @@
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.Label Label21;
         internal System.Windows.Forms.Label Label30;
-        internal System.Windows.Forms.Button btnAlterarBio;
         internal System.Windows.Forms.Button btnNovo;
         internal System.Windows.Forms.Button btnSalvar;
         internal System.Windows.Forms.TextBox txtPhos;
@@ -824,5 +830,6 @@
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label3;
+        public System.Windows.Forms.Button btnAlterarBio;
     }
 }

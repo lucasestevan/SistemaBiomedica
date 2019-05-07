@@ -128,7 +128,7 @@
             this.btnSelecionarColaHema.Location = new System.Drawing.Point(360, 53);
             this.btnSelecionarColaHema.Name = "btnSelecionarColaHema";
             this.btnSelecionarColaHema.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarColaHema.TabIndex = 193;
+            this.btnSelecionarColaHema.TabIndex = 1;
             this.btnSelecionarColaHema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarColaHema.UseVisualStyleBackColor = false;
             this.btnSelecionarColaHema.Click += new System.EventHandler(this.btnSelecionarColaHema_Click);
@@ -197,7 +197,7 @@
             this.mskData.Mask = "00/00/0000";
             this.mskData.Name = "mskData";
             this.mskData.Size = new System.Drawing.Size(64, 20);
-            this.mskData.TabIndex = 181;
+            this.mskData.TabIndex = 3;
             this.mskData.ValidatingType = typeof(System.DateTime);
             // 
             // txtNdia
@@ -205,7 +205,7 @@
             this.txtNdia.Location = new System.Drawing.Point(323, 110);
             this.txtNdia.Name = "txtNdia";
             this.txtNdia.Size = new System.Drawing.Size(33, 20);
-            this.txtNdia.TabIndex = 182;
+            this.txtNdia.TabIndex = 4;
             // 
             // txtNome
             // 
@@ -249,6 +249,7 @@
             // 
             // btnAlterarH
             // 
+            this.btnAlterarH.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarH.Location = new System.Drawing.Point(390, 365);
@@ -257,21 +258,22 @@
             this.btnAlterarH.TabIndex = 163;
             this.btnAlterarH.Text = "Alterar";
             this.btnAlterarH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarH.UseVisualStyleBackColor = true;
+            this.btnAlterarH.UseVisualStyleBackColor = false;
             this.btnAlterarH.Click += new System.EventHandler(this.btnAlterarH_Click);
             // 
             // btnNovo
             // 
+            this.btnNovo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Location = new System.Drawing.Point(46, 365);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 30);
-            this.btnNovo.TabIndex = 128;
+            this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSelecionarPacHema
@@ -285,22 +287,23 @@
             this.btnSelecionarPacHema.Location = new System.Drawing.Point(360, 81);
             this.btnSelecionarPacHema.Name = "btnSelecionarPacHema";
             this.btnSelecionarPacHema.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarPacHema.TabIndex = 180;
+            this.btnSelecionarPacHema.TabIndex = 2;
             this.btnSelecionarPacHema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarPacHema.UseVisualStyleBackColor = false;
             this.btnSelecionarPacHema.Click += new System.EventHandler(this.btnSelecionarPacHema_Click);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(217, 365);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(97, 30);
-            this.btnSalvar.TabIndex = 162;
+            this.btnSalvar.TabIndex = 29;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtfalci
@@ -309,7 +312,7 @@
             this.txtfalci.Multiline = true;
             this.txtfalci.Name = "txtfalci";
             this.txtfalci.Size = new System.Drawing.Size(44, 20);
-            this.txtfalci.TabIndex = 161;
+            this.txtfalci.TabIndex = 28;
             // 
             // txtvhs
             // 
@@ -317,7 +320,7 @@
             this.txtvhs.Multiline = true;
             this.txtvhs.Name = "txtvhs";
             this.txtvhs.Size = new System.Drawing.Size(44, 20);
-            this.txtvhs.TabIndex = 160;
+            this.txtvhs.TabIndex = 27;
             // 
             // txtrh
             // 
@@ -325,7 +328,7 @@
             this.txtrh.Multiline = true;
             this.txtrh.Name = "txtrh";
             this.txtrh.Size = new System.Drawing.Size(44, 20);
-            this.txtrh.TabIndex = 158;
+            this.txtrh.TabIndex = 26;
             // 
             // txtabo
             // 
@@ -333,7 +336,7 @@
             this.txtabo.Multiline = true;
             this.txtabo.Name = "txtabo";
             this.txtabo.Size = new System.Drawing.Size(44, 20);
-            this.txtabo.TabIndex = 156;
+            this.txtabo.TabIndex = 25;
             // 
             // txtobs
             // 
@@ -341,7 +344,7 @@
             this.txtobs.Multiline = true;
             this.txtobs.Name = "txtobs";
             this.txtobs.Size = new System.Drawing.Size(44, 20);
-            this.txtobs.TabIndex = 155;
+            this.txtobs.TabIndex = 24;
             // 
             // txtoutras
             // 
@@ -349,7 +352,7 @@
             this.txtoutras.Multiline = true;
             this.txtoutras.Name = "txtoutras";
             this.txtoutras.Size = new System.Drawing.Size(44, 20);
-            this.txtoutras.TabIndex = 153;
+            this.txtoutras.TabIndex = 23;
             // 
             // txtmono
             // 
@@ -357,7 +360,7 @@
             this.txtmono.Multiline = true;
             this.txtmono.Name = "txtmono";
             this.txtmono.Size = new System.Drawing.Size(44, 20);
-            this.txtmono.TabIndex = 151;
+            this.txtmono.TabIndex = 22;
             // 
             // txtlinat
             // 
@@ -365,7 +368,7 @@
             this.txtlinat.Multiline = true;
             this.txtlinat.Name = "txtlinat";
             this.txtlinat.Size = new System.Drawing.Size(44, 20);
-            this.txtlinat.TabIndex = 149;
+            this.txtlinat.TabIndex = 21;
             // 
             // Label21
             // 
@@ -453,7 +456,7 @@
             this.txtlintip.Multiline = true;
             this.txtlintip.Name = "txtlintip";
             this.txtlintip.Size = new System.Drawing.Size(44, 20);
-            this.txtlintip.TabIndex = 147;
+            this.txtlintip.TabIndex = 20;
             // 
             // txtbaf
             // 
@@ -461,7 +464,7 @@
             this.txtbaf.Multiline = true;
             this.txtbaf.Name = "txtbaf";
             this.txtbaf.Size = new System.Drawing.Size(44, 20);
-            this.txtbaf.TabIndex = 144;
+            this.txtbaf.TabIndex = 19;
             // 
             // txteos
             // 
@@ -469,7 +472,7 @@
             this.txteos.Multiline = true;
             this.txteos.Name = "txteos";
             this.txteos.Size = new System.Drawing.Size(44, 20);
-            this.txteos.TabIndex = 143;
+            this.txteos.TabIndex = 18;
             // 
             // txtseg
             // 
@@ -477,7 +480,7 @@
             this.txtseg.Multiline = true;
             this.txtseg.Name = "txtseg";
             this.txtseg.Size = new System.Drawing.Size(44, 20);
-            this.txtseg.TabIndex = 142;
+            this.txtseg.TabIndex = 17;
             // 
             // txtbas
             // 
@@ -485,7 +488,7 @@
             this.txtbas.Multiline = true;
             this.txtbas.Name = "txtbas";
             this.txtbas.Size = new System.Drawing.Size(44, 20);
-            this.txtbas.TabIndex = 141;
+            this.txtbas.TabIndex = 16;
             // 
             // txtmet
             // 
@@ -493,7 +496,7 @@
             this.txtmet.Multiline = true;
             this.txtmet.Name = "txtmet";
             this.txtmet.Size = new System.Drawing.Size(44, 20);
-            this.txtmet.TabIndex = 140;
+            this.txtmet.TabIndex = 15;
             // 
             // txtmie
             // 
@@ -501,7 +504,7 @@
             this.txtmie.Multiline = true;
             this.txtmie.Name = "txtmie";
             this.txtmie.Size = new System.Drawing.Size(44, 20);
-            this.txtmie.TabIndex = 139;
+            this.txtmie.TabIndex = 14;
             // 
             // txtleuc
             // 
@@ -509,7 +512,7 @@
             this.txtleuc.Multiline = true;
             this.txtleuc.Name = "txtleuc";
             this.txtleuc.Size = new System.Drawing.Size(44, 20);
-            this.txtleuc.TabIndex = 138;
+            this.txtleuc.TabIndex = 13;
             // 
             // Label13
             // 
@@ -597,7 +600,7 @@
             this.txtret.Multiline = true;
             this.txtret.Name = "txtret";
             this.txtret.Size = new System.Drawing.Size(44, 20);
-            this.txtret.TabIndex = 136;
+            this.txtret.TabIndex = 12;
             // 
             // txtplaq
             // 
@@ -605,7 +608,7 @@
             this.txtplaq.Multiline = true;
             this.txtplaq.Name = "txtplaq";
             this.txtplaq.Size = new System.Drawing.Size(44, 20);
-            this.txtplaq.TabIndex = 135;
+            this.txtplaq.TabIndex = 11;
             // 
             // txtchcm
             // 
@@ -613,7 +616,7 @@
             this.txtchcm.Multiline = true;
             this.txtchcm.Name = "txtchcm";
             this.txtchcm.Size = new System.Drawing.Size(44, 20);
-            this.txtchcm.TabIndex = 134;
+            this.txtchcm.TabIndex = 10;
             // 
             // txthcm
             // 
@@ -621,7 +624,7 @@
             this.txthcm.Multiline = true;
             this.txthcm.Name = "txthcm";
             this.txthcm.Size = new System.Drawing.Size(44, 20);
-            this.txthcm.TabIndex = 133;
+            this.txthcm.TabIndex = 9;
             // 
             // txtvmc
             // 
@@ -629,7 +632,7 @@
             this.txtvmc.Multiline = true;
             this.txtvmc.Name = "txtvmc";
             this.txtvmc.Size = new System.Drawing.Size(44, 20);
-            this.txtvmc.TabIndex = 132;
+            this.txtvmc.TabIndex = 8;
             // 
             // txtht
             // 
@@ -637,7 +640,7 @@
             this.txtht.Multiline = true;
             this.txtht.Name = "txtht";
             this.txtht.Size = new System.Drawing.Size(44, 20);
-            this.txtht.TabIndex = 131;
+            this.txtht.TabIndex = 7;
             // 
             // txthb
             // 
@@ -645,7 +648,7 @@
             this.txthb.Multiline = true;
             this.txthb.Name = "txthb";
             this.txthb.Size = new System.Drawing.Size(44, 20);
-            this.txthb.TabIndex = 130;
+            this.txthb.TabIndex = 6;
             // 
             // txterit
             // 
@@ -653,7 +656,7 @@
             this.txterit.Multiline = true;
             this.txterit.Name = "txterit";
             this.txterit.Size = new System.Drawing.Size(44, 20);
-            this.txterit.TabIndex = 129;
+            this.txterit.TabIndex = 5;
             // 
             // Label11
             // 
@@ -750,6 +753,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(532, 402);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.txtIdcola);
@@ -819,7 +823,11 @@
             this.Controls.Add(this.Label5);
             this.Controls.Add(this.Label6);
             this.Controls.Add(this.Label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_Hematologia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hematologia";
             this.Load += new System.EventHandler(this.frm_Hematologia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

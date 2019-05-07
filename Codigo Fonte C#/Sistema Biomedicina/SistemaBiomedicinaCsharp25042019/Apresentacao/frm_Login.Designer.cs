@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Login));
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
@@ -44,28 +45,30 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(85, 20);
-            this.txtSenha.TabIndex = 14;
+            this.txtSenha.TabIndex = 2;
             // 
             // btnEntrar
             // 
+            this.btnEntrar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Location = new System.Drawing.Point(90, 252);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(97, 37);
-            this.btnEntrar.TabIndex = 15;
+            this.btnEntrar.TabIndex = 3;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // PictureBox2
             // 
             this.PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox2.Location = new System.Drawing.Point(58, 319);
+            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
+            this.PictureBox2.Location = new System.Drawing.Point(43, 313);
             this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(147, 50);
+            this.PictureBox2.Size = new System.Drawing.Size(178, 50);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox2.TabIndex = 17;
             this.PictureBox2.TabStop = false;
@@ -90,20 +93,23 @@
             this.txtUsuario.Location = new System.Drawing.Point(78, 191);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(127, 20);
-            this.txtUsuario.TabIndex = 13;
+            this.txtUsuario.TabIndex = 1;
             // 
             // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(271, 376);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.txtUsuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_Login";
-            this.Text = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);

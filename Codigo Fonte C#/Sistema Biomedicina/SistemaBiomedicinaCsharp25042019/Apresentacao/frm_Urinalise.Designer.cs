@@ -122,7 +122,7 @@
             this.btnSelecionarColaUri.Location = new System.Drawing.Point(371, 55);
             this.btnSelecionarColaUri.Name = "btnSelecionarColaUri";
             this.btnSelecionarColaUri.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarColaUri.TabIndex = 256;
+            this.btnSelecionarColaUri.TabIndex = 2;
             this.btnSelecionarColaUri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarColaUri.UseVisualStyleBackColor = false;
             this.btnSelecionarColaUri.Click += new System.EventHandler(this.btnSelecionarColaUri_Click);
@@ -191,7 +191,7 @@
             this.mskData.Mask = "00/00/0000";
             this.mskData.Name = "mskData";
             this.mskData.Size = new System.Drawing.Size(64, 20);
-            this.mskData.TabIndex = 244;
+            this.mskData.TabIndex = 4;
             this.mskData.ValidatingType = typeof(System.DateTime);
             // 
             // txtNdia
@@ -199,7 +199,7 @@
             this.txtNdia.Location = new System.Drawing.Point(332, 110);
             this.txtNdia.Name = "txtNdia";
             this.txtNdia.Size = new System.Drawing.Size(33, 20);
-            this.txtNdia.TabIndex = 245;
+            this.txtNdia.TabIndex = 5;
             // 
             // txtNome
             // 
@@ -243,6 +243,7 @@
             // 
             // btnAlterarU
             // 
+            this.btnAlterarU.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarU.Location = new System.Drawing.Point(411, 367);
@@ -251,21 +252,22 @@
             this.btnAlterarU.TabIndex = 220;
             this.btnAlterarU.Text = "Alterar";
             this.btnAlterarU.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarU.UseVisualStyleBackColor = true;
+            this.btnAlterarU.UseVisualStyleBackColor = false;
             this.btnAlterarU.Click += new System.EventHandler(this.btnAlterarU_Click);
             // 
             // btnNovo
             // 
+            this.btnNovo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Location = new System.Drawing.Point(29, 367);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 30);
-            this.btnNovo.TabIndex = 221;
+            this.btnNovo.TabIndex = 1;
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSelecionarPacUri
@@ -279,22 +281,23 @@
             this.btnSelecionarPacUri.Location = new System.Drawing.Point(371, 82);
             this.btnSelecionarPacUri.Name = "btnSelecionarPacUri";
             this.btnSelecionarPacUri.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarPacUri.TabIndex = 197;
+            this.btnSelecionarPacUri.TabIndex = 3;
             this.btnSelecionarPacUri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarPacUri.UseVisualStyleBackColor = false;
             this.btnSelecionarPacUri.Click += new System.EventHandler(this.btnSelecionarPacUri_Click);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(222, 367);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(97, 30);
-            this.btnSalvar.TabIndex = 219;
+            this.btnSalvar.TabIndex = 27;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtoutros2
@@ -303,7 +306,7 @@
             this.txtoutros2.Multiline = true;
             this.txtoutros2.Name = "txtoutros2";
             this.txtoutros2.Size = new System.Drawing.Size(44, 20);
-            this.txtoutros2.TabIndex = 218;
+            this.txtoutros2.TabIndex = 26;
             // 
             // txtoutros1
             // 
@@ -311,7 +314,7 @@
             this.txtoutros1.Multiline = true;
             this.txtoutros1.Name = "txtoutros1";
             this.txtoutros1.Size = new System.Drawing.Size(44, 20);
-            this.txtoutros1.TabIndex = 217;
+            this.txtoutros1.TabIndex = 25;
             // 
             // txttrinch
             // 
@@ -319,7 +322,7 @@
             this.txttrinch.Multiline = true;
             this.txttrinch.Name = "txttrinch";
             this.txttrinch.Size = new System.Drawing.Size(44, 20);
-            this.txttrinch.TabIndex = 216;
+            this.txttrinch.TabIndex = 24;
             // 
             // txtfmuco
             // 
@@ -327,7 +330,7 @@
             this.txtfmuco.Multiline = true;
             this.txtfmuco.Name = "txtfmuco";
             this.txtfmuco.Size = new System.Drawing.Size(44, 20);
-            this.txtfmuco.TabIndex = 215;
+            this.txtfmuco.TabIndex = 23;
             // 
             // txtcrist
             // 
@@ -335,7 +338,7 @@
             this.txtcrist.Multiline = true;
             this.txtcrist.Name = "txtcrist";
             this.txtcrist.Size = new System.Drawing.Size(44, 20);
-            this.txtcrist.TabIndex = 214;
+            this.txtcrist.TabIndex = 22;
             // 
             // Label23
             // 
@@ -393,7 +396,7 @@
             this.txtcil.Multiline = true;
             this.txtcil.Name = "txtcil";
             this.txtcil.Size = new System.Drawing.Size(44, 20);
-            this.txtcil.TabIndex = 213;
+            this.txtcil.TabIndex = 21;
             // 
             // txtbac
             // 
@@ -401,7 +404,7 @@
             this.txtbac.Multiline = true;
             this.txtbac.Name = "txtbac";
             this.txtbac.Size = new System.Drawing.Size(44, 20);
-            this.txtbac.TabIndex = 212;
+            this.txtbac.TabIndex = 20;
             // 
             // txthem
             // 
@@ -409,7 +412,7 @@
             this.txthem.Multiline = true;
             this.txthem.Name = "txthem";
             this.txthem.Size = new System.Drawing.Size(44, 20);
-            this.txthem.TabIndex = 211;
+            this.txthem.TabIndex = 19;
             // 
             // txtleu
             // 
@@ -417,7 +420,7 @@
             this.txtleu.Multiline = true;
             this.txtleu.Name = "txtleu";
             this.txtleu.Size = new System.Drawing.Size(44, 20);
-            this.txtleu.TabIndex = 210;
+            this.txtleu.TabIndex = 18;
             // 
             // txtcels
             // 
@@ -425,7 +428,7 @@
             this.txtcels.Multiline = true;
             this.txtcels.Name = "txtcels";
             this.txtcels.Size = new System.Drawing.Size(44, 20);
-            this.txtcels.TabIndex = 209;
+            this.txtcels.TabIndex = 17;
             // 
             // txtnit
             // 
@@ -433,7 +436,7 @@
             this.txtnit.Multiline = true;
             this.txtnit.Name = "txtnit";
             this.txtnit.Size = new System.Drawing.Size(44, 20);
-            this.txtnit.TabIndex = 208;
+            this.txtnit.TabIndex = 16;
             // 
             // txthb
             // 
@@ -441,7 +444,7 @@
             this.txthb.Multiline = true;
             this.txthb.Name = "txthb";
             this.txthb.Size = new System.Drawing.Size(44, 20);
-            this.txthb.TabIndex = 207;
+            this.txthb.TabIndex = 15;
             // 
             // txtcet
             // 
@@ -449,7 +452,7 @@
             this.txtcet.Multiline = true;
             this.txtcet.Name = "txtcet";
             this.txtcet.Size = new System.Drawing.Size(44, 20);
-            this.txtcet.TabIndex = 206;
+            this.txtcet.TabIndex = 14;
             // 
             // Label13
             // 
@@ -537,7 +540,7 @@
             this.txtbil.Multiline = true;
             this.txtbil.Name = "txtbil";
             this.txtbil.Size = new System.Drawing.Size(44, 20);
-            this.txtbil.TabIndex = 205;
+            this.txtbil.TabIndex = 13;
             // 
             // txturo
             // 
@@ -545,7 +548,7 @@
             this.txturo.Multiline = true;
             this.txturo.Name = "txturo";
             this.txturo.Size = new System.Drawing.Size(44, 20);
-            this.txturo.TabIndex = 204;
+            this.txturo.TabIndex = 12;
             // 
             // txtgli
             // 
@@ -553,7 +556,7 @@
             this.txtgli.Multiline = true;
             this.txtgli.Name = "txtgli";
             this.txtgli.Size = new System.Drawing.Size(44, 20);
-            this.txtgli.TabIndex = 203;
+            this.txtgli.TabIndex = 11;
             // 
             // txtpt
             // 
@@ -561,7 +564,7 @@
             this.txtpt.Multiline = true;
             this.txtpt.Name = "txtpt";
             this.txtpt.Size = new System.Drawing.Size(44, 20);
-            this.txtpt.TabIndex = 202;
+            this.txtpt.TabIndex = 10;
             // 
             // txtph
             // 
@@ -569,7 +572,7 @@
             this.txtph.Multiline = true;
             this.txtph.Name = "txtph";
             this.txtph.Size = new System.Drawing.Size(44, 20);
-            this.txtph.TabIndex = 201;
+            this.txtph.TabIndex = 9;
             // 
             // txtdens
             // 
@@ -577,7 +580,7 @@
             this.txtdens.Multiline = true;
             this.txtdens.Name = "txtdens";
             this.txtdens.Size = new System.Drawing.Size(44, 20);
-            this.txtdens.TabIndex = 200;
+            this.txtdens.TabIndex = 8;
             // 
             // txtaspc
             // 
@@ -585,7 +588,7 @@
             this.txtaspc.Multiline = true;
             this.txtaspc.Name = "txtaspc";
             this.txtaspc.Size = new System.Drawing.Size(44, 20);
-            this.txtaspc.TabIndex = 199;
+            this.txtaspc.TabIndex = 7;
             // 
             // txtcor
             // 
@@ -593,7 +596,7 @@
             this.txtcor.Multiline = true;
             this.txtcor.Name = "txtcor";
             this.txtcor.Size = new System.Drawing.Size(44, 20);
-            this.txtcor.TabIndex = 198;
+            this.txtcor.TabIndex = 6;
             // 
             // Label11
             // 
@@ -690,6 +693,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(530, 407);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.txtIdcola);
@@ -753,7 +757,10 @@
             this.Controls.Add(this.Label5);
             this.Controls.Add(this.Label6);
             this.Controls.Add(this.Label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_Urinalise";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Urinalise";
             this.Load += new System.EventHandler(this.frm_Urinalise_Load);
             this.ResumeLayout(false);

@@ -54,6 +54,7 @@
             // 
             // btnSelecionarHema
             // 
+            this.btnSelecionarHema.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSelecionarHema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSelecionarHema.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarHema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -64,7 +65,7 @@
             this.btnSelecionarHema.TabIndex = 117;
             this.btnSelecionarHema.Text = "Selecionar";
             this.btnSelecionarHema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSelecionarHema.UseVisualStyleBackColor = true;
+            this.btnSelecionarHema.UseVisualStyleBackColor = false;
             this.btnSelecionarHema.Visible = false;
             this.btnSelecionarHema.Click += new System.EventHandler(this.btnSelecionarHema_Click);
             // 
@@ -142,12 +143,12 @@
             this.cmbNivel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbNivel.FormattingEnabled = true;
             this.cmbNivel.Items.AddRange(new object[] {
-            "Estagiário",
-            "Coordenador"});
+            "ESTAGIÁRIO",
+            "COORDENADOR"});
             this.cmbNivel.Location = new System.Drawing.Point(60, 78);
             this.cmbNivel.Name = "cmbNivel";
             this.cmbNivel.Size = new System.Drawing.Size(130, 21);
-            this.cmbNivel.TabIndex = 101;
+            this.cmbNivel.TabIndex = 8;
             // 
             // Label4
             // 
@@ -162,16 +163,17 @@
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Location = new System.Drawing.Point(383, 68);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(97, 30);
-            this.btnPesquisar.TabIndex = 102;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // lbltotal
@@ -202,48 +204,51 @@
             this.mskCpf.Mask = "000,000,000,00";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(85, 20);
-            this.mskCpf.TabIndex = 100;
+            this.mskCpf.TabIndex = 7;
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Location = new System.Drawing.Point(383, 255);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(97, 30);
-            this.btnExcluir.TabIndex = 106;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Location = new System.Drawing.Point(383, 208);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(97, 30);
-            this.btnEditar.TabIndex = 104;
-            this.btnEditar.Text = "Editar";
+            this.btnEditar.TabIndex = 4;
+            this.btnEditar.Text = "Alterar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(383, 115);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(97, 30);
-            this.btnSalvar.TabIndex = 103;
+            this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // dgColaborador
@@ -262,16 +267,17 @@
             // 
             // btnNovo
             // 
+            this.btnNovo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Location = new System.Drawing.Point(383, 21);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 30);
-            this.btnNovo.TabIndex = 98;
+            this.btnNovo.TabIndex = 1;
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // txtNome
@@ -280,7 +286,7 @@
             this.txtNome.Location = new System.Drawing.Point(60, 21);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 20);
-            this.txtNome.TabIndex = 99;
+            this.txtNome.TabIndex = 6;
             // 
             // Label2
             // 
@@ -308,6 +314,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(493, 293);
             this.Controls.Add(this.btnSelecionarHema);
             this.Controls.Add(this.btnSelecionarUri);
@@ -329,7 +336,10 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_CadColaborador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Colaborador";
             this.Load += new System.EventHandler(this.frm_CadColaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgColaborador)).EndInit();

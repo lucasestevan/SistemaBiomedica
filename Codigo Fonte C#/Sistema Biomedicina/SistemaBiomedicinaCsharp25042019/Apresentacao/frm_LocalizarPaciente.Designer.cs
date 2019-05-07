@@ -70,6 +70,7 @@
             // 
             // btnSelecionarBioq
             // 
+            this.btnSelecionarBioq.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSelecionarBioq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSelecionarBioq.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarBioq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -80,7 +81,7 @@
             this.btnSelecionarBioq.TabIndex = 103;
             this.btnSelecionarBioq.Text = "Selecionar";
             this.btnSelecionarBioq.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSelecionarBioq.UseVisualStyleBackColor = true;
+            this.btnSelecionarBioq.UseVisualStyleBackColor = false;
             this.btnSelecionarBioq.Visible = false;
             this.btnSelecionarBioq.Click += new System.EventHandler(this.btnSelecionarBioq_Click);
             // 
@@ -137,20 +138,21 @@
             this.txtCpf.Location = new System.Drawing.Point(12, 66);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(116, 20);
-            this.txtCpf.TabIndex = 110;
+            this.txtCpf.TabIndex = 2;
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Location = new System.Drawing.Point(583, 17);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(97, 37);
-            this.btnPesquisar.TabIndex = 100;
+            this.btnPesquisar.TabIndex = 3;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // lblTotal
@@ -177,28 +179,30 @@
             // 
             // btnAlterar
             // 
+            this.btnAlterar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterar.Location = new System.Drawing.Point(583, 66);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(97, 37);
-            this.btnAlterar.TabIndex = 101;
+            this.btnAlterar.TabIndex = 4;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Location = new System.Drawing.Point(583, 115);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(97, 37);
-            this.btnExcluir.TabIndex = 102;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // dgLocalizarPac
@@ -230,7 +234,7 @@
             this.txtnome.Location = new System.Drawing.Point(12, 26);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(288, 20);
-            this.txtnome.TabIndex = 106;
+            this.txtnome.TabIndex = 1;
             // 
             // Label1
             // 
@@ -256,6 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(688, 354);
             this.Controls.Add(this.txtIdPac);
             this.Controls.Add(this.Label3);
@@ -273,7 +278,10 @@
             this.Controls.Add(this.txtnome);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.Nome);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_LocalizarPaciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Localizar Paciente";
             this.Load += new System.EventHandler(this.frm_LocalizarPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgLocalizarPac)).EndInit();

@@ -31,89 +31,124 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu));
             this.lblData = new System.Windows.Forms.Label();
-            this.StatusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.Botaologout = new System.Windows.Forms.Button();
+            this.Btnlogout = new System.Windows.Forms.Button();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.MsExames = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmHema = new System.Windows.Forms.ToolStripMenuItem();
-            this.Exame2ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmUri = new System.Windows.Forms.ToolStripMenuItem();
-            this.Exame4ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmMicro = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmBio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultaExame = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmLocalizar = new System.Windows.Forms.ToolStripMenuItem();
             this.MsCadastro = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmPaciente = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmColaborador = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmPaciente = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsultaExame = new System.Windows.Forms.ToolStripMenuItem();
+            this.MsExames = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmBio = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exame2ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmHema = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmMicro = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exame4ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmUri = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmLocalizar = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.StatusStrip1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MenuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(503, 49);
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblData.Location = new System.Drawing.Point(462, 6);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(8, 12);
+            this.lblData.Size = new System.Drawing.Size(10, 13);
             this.lblData.TabIndex = 15;
             this.lblData.Text = "-";
             // 
-            // StatusStrip1
+            // Btnlogout
             // 
-            this.StatusStrip1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.StatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblUsuario,
-            this.toolStripStatusLabel1});
-            this.StatusStrip1.Location = new System.Drawing.Point(0, 43);
-            this.StatusStrip1.Name = "StatusStrip1";
-            this.StatusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.StatusStrip1.Size = new System.Drawing.Size(567, 22);
-            this.StatusStrip1.TabIndex = 14;
-            this.StatusStrip1.Text = "StatusStrip1";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(12, 17);
-            this.lblUsuario.Text = "-";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
-            // 
-            // Botaologout
-            // 
-            this.Botaologout.BackColor = System.Drawing.Color.Transparent;
-            this.Botaologout.Location = new System.Drawing.Point(487, 5);
-            this.Botaologout.Name = "Botaologout";
-            this.Botaologout.Size = new System.Drawing.Size(75, 23);
-            this.Botaologout.TabIndex = 13;
-            this.Botaologout.Text = "Logout";
-            this.Botaologout.UseVisualStyleBackColor = false;
-            this.Botaologout.Click += new System.EventHandler(this.Botaologout_Click);
+            this.Btnlogout.BackColor = System.Drawing.SystemColors.Control;
+            this.Btnlogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Btnlogout.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.Btnlogout.Location = new System.Drawing.Point(41, 326);
+            this.Btnlogout.Name = "Btnlogout";
+            this.Btnlogout.Size = new System.Drawing.Size(75, 23);
+            this.Btnlogout.TabIndex = 13;
+            this.Btnlogout.Text = "Sair";
+            this.Btnlogout.UseVisualStyleBackColor = false;
+            this.Btnlogout.Click += new System.EventHandler(this.Botaologout_Click);
             // 
             // MenuStrip1
             // 
-            this.MenuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MsExames,
+            this.MsCadastro,
             this.tsmConsultaExame,
-            this.tsmLocalizar,
-            this.MsCadastro});
-            this.MenuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.MsExames,
+            this.tsmLocalizar});
+            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.MenuStrip1.Location = new System.Drawing.Point(29, 32);
             this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.Size = new System.Drawing.Size(567, 39);
+            this.MenuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.MenuStrip1.Size = new System.Drawing.Size(144, 210);
             this.MenuStrip1.TabIndex = 12;
             this.MenuStrip1.Text = "MenuStrip1";
+            // 
+            // MsCadastro
+            // 
+            this.MsCadastro.BackColor = System.Drawing.Color.Transparent;
+            this.MsCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmColaborador,
+            this.ToolStripMenuItem2,
+            this.tsmPaciente});
+            this.MsCadastro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MsCadastro.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.MsCadastro.Image = ((System.Drawing.Image)(resources.GetObject("MsCadastro.Image")));
+            this.MsCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MsCadastro.Name = "MsCadastro";
+            this.MsCadastro.Padding = new System.Windows.Forms.Padding(4, 0, 4, 30);
+            this.MsCadastro.Size = new System.Drawing.Size(138, 51);
+            this.MsCadastro.Text = "&Cadastro";
+            // 
+            // tsmColaborador
+            // 
+            this.tsmColaborador.Name = "tsmColaborador";
+            this.tsmColaborador.Size = new System.Drawing.Size(180, 22);
+            this.tsmColaborador.Text = "Colaborador";
+            this.tsmColaborador.Click += new System.EventHandler(this.tsmColaborador_Click);
+            // 
+            // ToolStripMenuItem2
+            // 
+            this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
+            this.ToolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // tsmPaciente
+            // 
+            this.tsmPaciente.Name = "tsmPaciente";
+            this.tsmPaciente.Size = new System.Drawing.Size(180, 22);
+            this.tsmPaciente.Text = "Paciente";
+            this.tsmPaciente.Click += new System.EventHandler(this.tsmPaciente_Click);
+            // 
+            // tsmConsultaExame
+            // 
+            this.tsmConsultaExame.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmConsultaExame.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.tsmConsultaExame.Image = ((System.Drawing.Image)(resources.GetObject("tsmConsultaExame.Image")));
+            this.tsmConsultaExame.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tsmConsultaExame.Name = "tsmConsultaExame";
+            this.tsmConsultaExame.Padding = new System.Windows.Forms.Padding(4, 0, 4, 30);
+            this.tsmConsultaExame.Size = new System.Drawing.Size(138, 51);
+            this.tsmConsultaExame.Text = "&Consultar Exames";
+            this.tsmConsultaExame.Click += new System.EventHandler(this.tsmConsultaExame_Click);
             // 
             // MsExames
             // 
@@ -125,47 +160,14 @@
             this.tsmMicro,
             this.Exame4ToolStripMenuItem,
             this.tsmUri});
+            this.MsExames.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MsExames.ForeColor = System.Drawing.SystemColors.Desktop;
             this.MsExames.Image = ((System.Drawing.Image)(resources.GetObject("MsExames.Image")));
+            this.MsExames.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MsExames.Name = "MsExames";
-            this.MsExames.Size = new System.Drawing.Size(58, 35);
+            this.MsExames.Padding = new System.Windows.Forms.Padding(4, 0, 4, 30);
+            this.MsExames.Size = new System.Drawing.Size(138, 51);
             this.MsExames.Text = "&Exames";
-            this.MsExames.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsmHema
-            // 
-            this.tsmHema.Name = "tsmHema";
-            this.tsmHema.Size = new System.Drawing.Size(180, 22);
-            this.tsmHema.Text = "Hematologia";
-            this.tsmHema.Click += new System.EventHandler(this.tsmHema_Click);
-            // 
-            // Exame2ToolStripMenuItem
-            // 
-            this.Exame2ToolStripMenuItem.Name = "Exame2ToolStripMenuItem";
-            this.Exame2ToolStripMenuItem.Size = new System.Drawing.Size(177, 6);
-            // 
-            // tsmUri
-            // 
-            this.tsmUri.Name = "tsmUri";
-            this.tsmUri.Size = new System.Drawing.Size(180, 22);
-            this.tsmUri.Text = "Urinálise";
-            this.tsmUri.Click += new System.EventHandler(this.tsmUri_Click);
-            // 
-            // Exame4ToolStripMenuItem
-            // 
-            this.Exame4ToolStripMenuItem.Name = "Exame4ToolStripMenuItem";
-            this.Exame4ToolStripMenuItem.Size = new System.Drawing.Size(177, 6);
-            // 
-            // tsmMicro
-            // 
-            this.tsmMicro.Name = "tsmMicro";
-            this.tsmMicro.Size = new System.Drawing.Size(180, 22);
-            this.tsmMicro.Text = "Microbiologia";
-            this.tsmMicro.Click += new System.EventHandler(this.tsmMicro_Click);
-            // 
-            // ToolStripMenuItem1
-            // 
-            this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
-            this.ToolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // tsmBio
             // 
@@ -174,88 +176,146 @@
             this.tsmBio.Text = "Bioquímica";
             this.tsmBio.Click += new System.EventHandler(this.tsmBio_Click);
             // 
-            // tsmConsultaExame
+            // Exame2ToolStripMenuItem
             // 
-            this.tsmConsultaExame.Image = ((System.Drawing.Image)(resources.GetObject("tsmConsultaExame.Image")));
-            this.tsmConsultaExame.Name = "tsmConsultaExame";
-            this.tsmConsultaExame.Size = new System.Drawing.Size(107, 35);
-            this.tsmConsultaExame.Text = "&Consultar Exame";
-            this.tsmConsultaExame.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsmConsultaExame.Click += new System.EventHandler(this.tsmConsultaExame_Click);
+            this.Exame2ToolStripMenuItem.Name = "Exame2ToolStripMenuItem";
+            this.Exame2ToolStripMenuItem.Size = new System.Drawing.Size(177, 6);
+            // 
+            // tsmHema
+            // 
+            this.tsmHema.Name = "tsmHema";
+            this.tsmHema.Size = new System.Drawing.Size(180, 22);
+            this.tsmHema.Text = "Hematologia";
+            this.tsmHema.Click += new System.EventHandler(this.tsmHema_Click);
+            // 
+            // ToolStripMenuItem1
+            // 
+            this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
+            this.ToolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // tsmMicro
+            // 
+            this.tsmMicro.Name = "tsmMicro";
+            this.tsmMicro.Size = new System.Drawing.Size(180, 22);
+            this.tsmMicro.Text = "Microbiologia";
+            this.tsmMicro.Click += new System.EventHandler(this.tsmMicro_Click);
+            // 
+            // Exame4ToolStripMenuItem
+            // 
+            this.Exame4ToolStripMenuItem.Name = "Exame4ToolStripMenuItem";
+            this.Exame4ToolStripMenuItem.Size = new System.Drawing.Size(177, 6);
+            // 
+            // tsmUri
+            // 
+            this.tsmUri.Name = "tsmUri";
+            this.tsmUri.Size = new System.Drawing.Size(180, 22);
+            this.tsmUri.Text = "Urinálise";
+            this.tsmUri.Click += new System.EventHandler(this.tsmUri_Click);
             // 
             // tsmLocalizar
             // 
+            this.tsmLocalizar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmLocalizar.ForeColor = System.Drawing.SystemColors.Desktop;
             this.tsmLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("tsmLocalizar.Image")));
+            this.tsmLocalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsmLocalizar.Name = "tsmLocalizar";
-            this.tsmLocalizar.Size = new System.Drawing.Size(68, 35);
+            this.tsmLocalizar.Padding = new System.Windows.Forms.Padding(4, 0, 4, 30);
+            this.tsmLocalizar.Size = new System.Drawing.Size(138, 51);
             this.tsmLocalizar.Text = "&Localizar ";
-            this.tsmLocalizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsmLocalizar.Click += new System.EventHandler(this.tsmLocalizar_Click);
-            // 
-            // MsCadastro
-            // 
-            this.MsCadastro.BackColor = System.Drawing.SystemColors.Control;
-            this.MsCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmColaborador,
-            this.ToolStripMenuItem2,
-            this.tsmPaciente});
-            this.MsCadastro.Image = ((System.Drawing.Image)(resources.GetObject("MsCadastro.Image")));
-            this.MsCadastro.Name = "MsCadastro";
-            this.MsCadastro.Size = new System.Drawing.Size(66, 35);
-            this.MsCadastro.Text = "&Cadastro";
-            this.MsCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsmPaciente
-            // 
-            this.tsmPaciente.Name = "tsmPaciente";
-            this.tsmPaciente.Size = new System.Drawing.Size(180, 22);
-            this.tsmPaciente.Text = "Paciente";
-            this.tsmPaciente.Click += new System.EventHandler(this.tsmPaciente_Click);
-            // 
-            // ToolStripMenuItem2
-            // 
-            this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
-            this.ToolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
-            // 
-            // tsmColaborador
-            // 
-            this.tsmColaborador.Name = "tsmColaborador";
-            this.tsmColaborador.Size = new System.Drawing.Size(180, 22);
-            this.tsmColaborador.Text = "Colaborador";
-            this.tsmColaborador.Click += new System.EventHandler(this.tsmColaborador_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(211)))), ((int)(((byte)(213)))));
+            this.panel1.Controls.Add(this.MenuStrip1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(209, 248);
+            this.panel1.TabIndex = 16;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.panel2.Controls.Add(this.lblData);
+            this.panel2.Controls.Add(this.lblUsuario);
+            this.panel2.Location = new System.Drawing.Point(-1, 381);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(543, 26);
+            this.panel2.TabIndex = 17;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(14, 3);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(12, 16);
+            this.lblUsuario.TabIndex = 16;
+            this.lblUsuario.Text = "-";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(227, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(294, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(335, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(186, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
             // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 65);
-            this.Controls.Add(this.lblData);
-            this.Controls.Add(this.StatusStrip1);
-            this.Controls.Add(this.Botaologout);
-            this.Controls.Add(this.MenuStrip1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(211)))), ((int)(((byte)(213)))));
+            this.ClientSize = new System.Drawing.Size(536, 406);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Btnlogout);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frm_Menu_Load);
-            this.StatusStrip1.ResumeLayout(false);
-            this.StatusStrip1.PerformLayout();
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         internal System.Windows.Forms.Label lblData;
-        internal System.Windows.Forms.StatusStrip StatusStrip1;
-        internal System.Windows.Forms.ToolStripStatusLabel lblUsuario;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        internal System.Windows.Forms.Button Botaologout;
+        internal System.Windows.Forms.Button Btnlogout;
         internal System.Windows.Forms.MenuStrip MenuStrip1;
         internal System.Windows.Forms.ToolStripMenuItem MsExames;
         internal System.Windows.Forms.ToolStripMenuItem tsmHema;
@@ -272,5 +332,10 @@
         internal System.Windows.Forms.ToolStripSeparator ToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripMenuItem tsmColaborador;
         internal System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        internal System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

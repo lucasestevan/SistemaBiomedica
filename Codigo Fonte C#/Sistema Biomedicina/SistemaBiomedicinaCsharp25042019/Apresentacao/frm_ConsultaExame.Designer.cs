@@ -75,6 +75,7 @@
             // 
             // btnImprimir
             // 
+            this.btnImprimir.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -84,19 +85,20 @@
             this.btnImprimir.TabIndex = 509;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.UseVisualStyleBackColor = false;
             // 
             // btnLocalizarUri
             // 
+            this.btnLocalizarUri.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnLocalizarUri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnLocalizarUri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizarUri.Location = new System.Drawing.Point(454, 18);
             this.btnLocalizarUri.Name = "btnLocalizarUri";
             this.btnLocalizarUri.Size = new System.Drawing.Size(97, 37);
-            this.btnLocalizarUri.TabIndex = 506;
+            this.btnLocalizarUri.TabIndex = 2;
             this.btnLocalizarUri.Text = "Pesquisar";
             this.btnLocalizarUri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLocalizarUri.UseVisualStyleBackColor = true;
+            this.btnLocalizarUri.UseVisualStyleBackColor = false;
             this.btnLocalizarUri.Click += new System.EventHandler(this.btnLocalizarUri_Click);
             // 
             // Nome
@@ -118,7 +120,6 @@
             this.rbMicrobiologia.Name = "rbMicrobiologia";
             this.rbMicrobiologia.Size = new System.Drawing.Size(87, 17);
             this.rbMicrobiologia.TabIndex = 526;
-            this.rbMicrobiologia.TabStop = true;
             this.rbMicrobiologia.Text = "Microbiologia";
             this.rbMicrobiologia.UseVisualStyleBackColor = false;
             this.rbMicrobiologia.CheckedChanged += new System.EventHandler(this.rbMicrobiologia_CheckedChanged);
@@ -132,7 +133,6 @@
             this.rbUrinalise.Name = "rbUrinalise";
             this.rbUrinalise.Size = new System.Drawing.Size(65, 17);
             this.rbUrinalise.TabIndex = 525;
-            this.rbUrinalise.TabStop = true;
             this.rbUrinalise.Text = "Urinalise";
             this.rbUrinalise.UseVisualStyleBackColor = false;
             this.rbUrinalise.CheckedChanged += new System.EventHandler(this.rbUrinalise_CheckedChanged);
@@ -146,7 +146,6 @@
             this.rbHematologia.Name = "rbHematologia";
             this.rbHematologia.Size = new System.Drawing.Size(84, 17);
             this.rbHematologia.TabIndex = 527;
-            this.rbHematologia.TabStop = true;
             this.rbHematologia.Text = "Hematologia";
             this.rbHematologia.UseVisualStyleBackColor = false;
             this.rbHematologia.CheckedChanged += new System.EventHandler(this.rbHematologia_CheckedChanged);
@@ -160,13 +159,13 @@
             this.rbBio.Name = "rbBio";
             this.rbBio.Size = new System.Drawing.Size(76, 17);
             this.rbBio.TabIndex = 528;
-            this.rbBio.TabStop = true;
             this.rbBio.Text = "Bioquimica";
             this.rbBio.UseVisualStyleBackColor = false;
             this.rbBio.CheckedChanged += new System.EventHandler(this.rbBio_CheckedChanged);
             // 
             // btnLocalizarHema
             // 
+            this.btnLocalizarHema.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnLocalizarHema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnLocalizarHema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizarHema.Location = new System.Drawing.Point(454, 18);
@@ -175,11 +174,12 @@
             this.btnLocalizarHema.TabIndex = 521;
             this.btnLocalizarHema.Text = "Pesquisar";
             this.btnLocalizarHema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLocalizarHema.UseVisualStyleBackColor = true;
+            this.btnLocalizarHema.UseVisualStyleBackColor = false;
             this.btnLocalizarHema.Click += new System.EventHandler(this.btnLocalizarHema_Click);
             // 
             // btnLocalizarBio
             // 
+            this.btnLocalizarBio.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnLocalizarBio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnLocalizarBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizarBio.Location = new System.Drawing.Point(454, 18);
@@ -188,24 +188,26 @@
             this.btnLocalizarBio.TabIndex = 520;
             this.btnLocalizarBio.Text = "Pesquisar";
             this.btnLocalizarBio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLocalizarBio.UseVisualStyleBackColor = true;
+            this.btnLocalizarBio.UseVisualStyleBackColor = false;
             this.btnLocalizarBio.Click += new System.EventHandler(this.btnLocalizarBio_Click);
             // 
             // btnExcluirUri
             // 
+            this.btnExcluirUri.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcluirUri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnExcluirUri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirUri.Location = new System.Drawing.Point(454, 140);
             this.btnExcluirUri.Name = "btnExcluirUri";
             this.btnExcluirUri.Size = new System.Drawing.Size(97, 37);
-            this.btnExcluirUri.TabIndex = 508;
+            this.btnExcluirUri.TabIndex = 4;
             this.btnExcluirUri.Text = "Excluir";
             this.btnExcluirUri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluirUri.UseVisualStyleBackColor = true;
+            this.btnExcluirUri.UseVisualStyleBackColor = false;
             this.btnExcluirUri.Click += new System.EventHandler(this.btnExcluirUri_Click);
             // 
             // btnExcluirBio
             // 
+            this.btnExcluirBio.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcluirBio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnExcluirBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirBio.Location = new System.Drawing.Point(454, 140);
@@ -214,11 +216,12 @@
             this.btnExcluirBio.TabIndex = 519;
             this.btnExcluirBio.Text = "Excluir";
             this.btnExcluirBio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluirBio.UseVisualStyleBackColor = true;
+            this.btnExcluirBio.UseVisualStyleBackColor = false;
             this.btnExcluirBio.Click += new System.EventHandler(this.btnExcluirBio_Click);
             // 
             // btnExcluirHema
             // 
+            this.btnExcluirHema.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcluirHema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnExcluirHema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirHema.Location = new System.Drawing.Point(454, 140);
@@ -227,24 +230,26 @@
             this.btnExcluirHema.TabIndex = 518;
             this.btnExcluirHema.Text = "Excluir";
             this.btnExcluirHema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluirHema.UseVisualStyleBackColor = true;
+            this.btnExcluirHema.UseVisualStyleBackColor = false;
             this.btnExcluirHema.Click += new System.EventHandler(this.btnExcluirHema_Click);
             // 
             // btnAlterarHema
             // 
+            this.btnAlterarHema.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarHema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarHema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarHema.Location = new System.Drawing.Point(454, 77);
             this.btnAlterarHema.Name = "btnAlterarHema";
             this.btnAlterarHema.Size = new System.Drawing.Size(97, 37);
-            this.btnAlterarHema.TabIndex = 507;
+            this.btnAlterarHema.TabIndex = 3;
             this.btnAlterarHema.Text = "Alterar";
             this.btnAlterarHema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarHema.UseVisualStyleBackColor = true;
+            this.btnAlterarHema.UseVisualStyleBackColor = false;
             this.btnAlterarHema.Click += new System.EventHandler(this.btnAlterarHema_Click);
             // 
             // btnAlterarBio
             // 
+            this.btnAlterarBio.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarBio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarBio.Location = new System.Drawing.Point(454, 77);
@@ -253,11 +258,12 @@
             this.btnAlterarBio.TabIndex = 517;
             this.btnAlterarBio.Text = "Alterar";
             this.btnAlterarBio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarBio.UseVisualStyleBackColor = true;
+            this.btnAlterarBio.UseVisualStyleBackColor = false;
             this.btnAlterarBio.Click += new System.EventHandler(this.btnAlterarBio_Click);
             // 
             // btnAlterarUri
             // 
+            this.btnAlterarUri.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarUri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarUri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarUri.Location = new System.Drawing.Point(454, 77);
@@ -266,7 +272,7 @@
             this.btnAlterarUri.TabIndex = 516;
             this.btnAlterarUri.Text = "Alterar";
             this.btnAlterarUri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarUri.UseVisualStyleBackColor = true;
+            this.btnAlterarUri.UseVisualStyleBackColor = false;
             this.btnAlterarUri.Click += new System.EventHandler(this.btnAlterarUri_Click);
             // 
             // txtNomePaci
@@ -274,7 +280,7 @@
             this.txtNomePaci.Location = new System.Drawing.Point(39, 33);
             this.txtNomePaci.Name = "txtNomePaci";
             this.txtNomePaci.Size = new System.Drawing.Size(240, 20);
-            this.txtNomePaci.TabIndex = 505;
+            this.txtNomePaci.TabIndex = 1;
             // 
             // lblTotal
             // 
@@ -300,6 +306,7 @@
             // 
             // btnAlterarMicro
             // 
+            this.btnAlterarMicro.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarMicro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarMicro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarMicro.Location = new System.Drawing.Point(454, 77);
@@ -308,11 +315,12 @@
             this.btnAlterarMicro.TabIndex = 513;
             this.btnAlterarMicro.Text = "Alterar";
             this.btnAlterarMicro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarMicro.UseVisualStyleBackColor = true;
+            this.btnAlterarMicro.UseVisualStyleBackColor = false;
             this.btnAlterarMicro.Click += new System.EventHandler(this.btnAlterarMicro_Click);
             // 
             // btnExcluirMicro
             // 
+            this.btnExcluirMicro.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcluirMicro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnExcluirMicro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirMicro.Location = new System.Drawing.Point(454, 140);
@@ -321,11 +329,12 @@
             this.btnExcluirMicro.TabIndex = 512;
             this.btnExcluirMicro.Text = "Excluir";
             this.btnExcluirMicro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluirMicro.UseVisualStyleBackColor = true;
+            this.btnExcluirMicro.UseVisualStyleBackColor = false;
             this.btnExcluirMicro.Click += new System.EventHandler(this.btnExcluirMicro_Click);
             // 
             // btnLocalizarMicro
             // 
+            this.btnLocalizarMicro.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnLocalizarMicro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnLocalizarMicro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizarMicro.Location = new System.Drawing.Point(454, 18);
@@ -334,7 +343,7 @@
             this.btnLocalizarMicro.TabIndex = 511;
             this.btnLocalizarMicro.Text = "Pesquisar";
             this.btnLocalizarMicro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLocalizarMicro.UseVisualStyleBackColor = true;
+            this.btnLocalizarMicro.UseVisualStyleBackColor = false;
             this.btnLocalizarMicro.Click += new System.EventHandler(this.btnLocalizarMicro_Click);
             // 
             // dgConsultarExame
@@ -354,6 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(560, 434);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.txtId);
@@ -379,7 +389,10 @@
             this.Controls.Add(this.btnExcluirMicro);
             this.Controls.Add(this.btnLocalizarMicro);
             this.Controls.Add(this.dgConsultarExame);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_ConsultaExame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar Exames";
             this.Load += new System.EventHandler(this.frm_ConsultaExame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgConsultarExame)).EndInit();

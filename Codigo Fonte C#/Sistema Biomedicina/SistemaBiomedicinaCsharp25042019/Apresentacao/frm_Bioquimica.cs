@@ -18,13 +18,13 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             InitializeComponent();
         }
 
-        private void frm_Biomedicina_Load(object sender, EventArgs e)
+        public void frm_Biomedicina_Load(object sender, EventArgs e)
         {
             DesabilitarCampos();
         }
 
         //METODO DESABILITAR CAMPOS 
-        private void DesabilitarCampos()
+        public void DesabilitarCampos()
         {
             txtId.Enabled = false;
             //txtNome.Enabled = false;
@@ -60,14 +60,14 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO NOVO
-        private void btnNovo_Click(object sender, EventArgs e)
+        public void btnNovo_Click(object sender, EventArgs e)
         {
             HabilitarCampo();
             LimparCampos();
         }
 
         //METODO LIMPAR CAMPOS
-        private void LimparCampos()
+        public void LimparCampos()
         {
             txtId.Text = "";
             txtNome.Text = "";
@@ -100,7 +100,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO HABILITAR CAMPOS
-        private void HabilitarCampo()
+        public void HabilitarCampo()
         {
             txtId.Enabled = true;
             txtNdia.Enabled = true;
@@ -134,7 +134,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO SELECIONAR COLABORADOR
-        private void btnSelecionarColaBio_Click(object sender, EventArgs e)
+        public void btnSelecionarColaBio_Click(object sender, EventArgs e)
         {
             txtCola.Text = "";
             txtIdcola.Text = "";
@@ -148,7 +148,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO SELECIONAR PACIENTE 
-        private void btnSelecionarPac_Click(object sender, EventArgs e)
+        public void btnSelecionarPac_Click(object sender, EventArgs e)
         {
             txtNome.Text = "";
             txtIdPac.Text = "";
@@ -162,7 +162,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         // BOTAO SALVAR
-        private void btnSalvar_Click(object sender, EventArgs e)
+        public void btnSalvar_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = default(SqlCommand);
 
@@ -246,7 +246,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO ALTERAR
-        private void btnAlterarBio_Click(object sender, EventArgs e)
+        public void btnAlterarBio_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = default(SqlCommand);
 

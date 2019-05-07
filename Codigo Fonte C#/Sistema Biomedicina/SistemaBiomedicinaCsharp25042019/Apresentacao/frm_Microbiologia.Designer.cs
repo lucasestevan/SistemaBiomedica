@@ -127,7 +127,7 @@
             this.txtNdia.Location = new System.Drawing.Point(285, 117);
             this.txtNdia.Name = "txtNdia";
             this.txtNdia.Size = new System.Drawing.Size(38, 20);
-            this.txtNdia.TabIndex = 114;
+            this.txtNdia.TabIndex = 4;
             // 
             // mskData
             // 
@@ -135,7 +135,7 @@
             this.mskData.Mask = "00/00/0000";
             this.mskData.Name = "mskData";
             this.mskData.Size = new System.Drawing.Size(64, 20);
-            this.mskData.TabIndex = 113;
+            this.mskData.TabIndex = 3;
             this.mskData.ValidatingType = typeof(System.DateTime);
             // 
             // txtId
@@ -154,7 +154,7 @@
             this.txtMat.Multiline = true;
             this.txtMat.Name = "txtMat";
             this.txtMat.Size = new System.Drawing.Size(44, 20);
-            this.txtMat.TabIndex = 115;
+            this.txtMat.TabIndex = 5;
             // 
             // txtGram
             // 
@@ -162,7 +162,7 @@
             this.txtGram.Multiline = true;
             this.txtGram.Name = "txtGram";
             this.txtGram.Size = new System.Drawing.Size(44, 20);
-            this.txtGram.TabIndex = 116;
+            this.txtGram.TabIndex = 6;
             // 
             // txtGram2
             // 
@@ -170,7 +170,7 @@
             this.txtGram2.Multiline = true;
             this.txtGram2.Name = "txtGram2";
             this.txtGram2.Size = new System.Drawing.Size(44, 20);
-            this.txtGram2.TabIndex = 117;
+            this.txtGram2.TabIndex = 7;
             // 
             // txtMicr1
             // 
@@ -178,7 +178,7 @@
             this.txtMicr1.Multiline = true;
             this.txtMicr1.Name = "txtMicr1";
             this.txtMicr1.Size = new System.Drawing.Size(44, 20);
-            this.txtMicr1.TabIndex = 118;
+            this.txtMicr1.TabIndex = 8;
             // 
             // txtCcol
             // 
@@ -186,7 +186,7 @@
             this.txtCcol.Multiline = true;
             this.txtCcol.Name = "txtCcol";
             this.txtCcol.Size = new System.Drawing.Size(44, 20);
-            this.txtCcol.TabIndex = 119;
+            this.txtCcol.TabIndex = 9;
             // 
             // txtMicr2
             // 
@@ -194,7 +194,7 @@
             this.txtMicr2.Multiline = true;
             this.txtMicr2.Name = "txtMicr2";
             this.txtMicr2.Size = new System.Drawing.Size(44, 20);
-            this.txtMicr2.TabIndex = 120;
+            this.txtMicr2.TabIndex = 10;
             // 
             // txtCcol2
             // 
@@ -202,7 +202,7 @@
             this.txtCcol2.Multiline = true;
             this.txtCcol2.Name = "txtCcol2";
             this.txtCcol2.Size = new System.Drawing.Size(44, 20);
-            this.txtCcol2.TabIndex = 121;
+            this.txtCcol2.TabIndex = 11;
             // 
             // txtBaar
             // 
@@ -210,7 +210,7 @@
             this.txtBaar.Multiline = true;
             this.txtBaar.Name = "txtBaar";
             this.txtBaar.Size = new System.Drawing.Size(44, 20);
-            this.txtBaar.TabIndex = 122;
+            this.txtBaar.TabIndex = 12;
             // 
             // Label6
             // 
@@ -294,15 +294,16 @@
             // 
             // btncad
             // 
+            this.btncad.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btncad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btncad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncad.Location = new System.Drawing.Point(176, 326);
+            this.btncad.Location = new System.Drawing.Point(171, 326);
             this.btncad.Name = "btncad";
             this.btncad.Size = new System.Drawing.Size(97, 30);
-            this.btncad.TabIndex = 123;
+            this.btncad.TabIndex = 13;
             this.btncad.Text = "Salvar";
             this.btncad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btncad.UseVisualStyleBackColor = true;
+            this.btncad.UseVisualStyleBackColor = false;
             this.btncad.Click += new System.EventHandler(this.btncad_Click);
             // 
             // btnSelecionarPacMicro
@@ -316,23 +317,24 @@
             this.btnSelecionarPacMicro.Location = new System.Drawing.Point(324, 90);
             this.btnSelecionarPacMicro.Name = "btnSelecionarPacMicro";
             this.btnSelecionarPacMicro.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarPacMicro.TabIndex = 141;
+            this.btnSelecionarPacMicro.TabIndex = 12;
             this.btnSelecionarPacMicro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarPacMicro.UseVisualStyleBackColor = false;
             this.btnSelecionarPacMicro.Click += new System.EventHandler(this.btnSelecionarPacMicro_Click);
             // 
             // btnNovo
             // 
+            this.btnNovo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Location = new System.Drawing.Point(21, 326);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 30);
-            this.btnNovo.TabIndex = 112;
+            this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // Label3
@@ -348,6 +350,7 @@
             // 
             // btnAlterarM
             // 
+            this.btnAlterarM.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAlterarM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAlterarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarM.Location = new System.Drawing.Point(315, 326);
@@ -356,11 +359,12 @@
             this.btnAlterarM.TabIndex = 125;
             this.btnAlterarM.Text = "Alterar";
             this.btnAlterarM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterarM.UseVisualStyleBackColor = true;
+            this.btnAlterarM.UseVisualStyleBackColor = false;
             this.btnAlterarM.Click += new System.EventHandler(this.btnAlterarM_Click);
             // 
             // btnImprimir
             // 
+            this.btnImprimir.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -370,7 +374,7 @@
             this.btnImprimir.TabIndex = 124;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.UseVisualStyleBackColor = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // Label13
@@ -432,7 +436,7 @@
             this.btnSelecionarColaMicro.Location = new System.Drawing.Point(324, 61);
             this.btnSelecionarColaMicro.Name = "btnSelecionarColaMicro";
             this.btnSelecionarColaMicro.Size = new System.Drawing.Size(23, 23);
-            this.btnSelecionarColaMicro.TabIndex = 148;
+            this.btnSelecionarColaMicro.TabIndex = 1;
             this.btnSelecionarColaMicro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSelecionarColaMicro.UseVisualStyleBackColor = false;
             this.btnSelecionarColaMicro.Click += new System.EventHandler(this.btnSelecionarColaMicro_Click);
@@ -467,6 +471,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(429, 362);
             this.Controls.Add(this.Label16);
             this.Controls.Add(this.txtIdcola);
@@ -505,7 +510,10 @@
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frm_Microbiologia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Microbiologia";
             this.Load += new System.EventHandler(this.frm_Microbiologia_Load);
             this.ResumeLayout(false);

@@ -18,13 +18,13 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             InitializeComponent();
         }
 
-        private void frm_ConsultaExame_Load(object sender, EventArgs e)
+        public void frm_ConsultaExame_Load(object sender, EventArgs e)
         {
             DesabilitarCampos();
         }
 
         //METODO DESABILITAR CAMPOS
-        private void DesabilitarCampos()
+        public void DesabilitarCampos()
         {
             btnExcluirMicro.Enabled = false;
             btnAlterarMicro.Enabled = false;
@@ -41,7 +41,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         // FORMATAR DG BIOQUIMICA
-        private void FormatarDgConsultarExameBio()
+        public void FormatarDgConsultarExameBio()
         {
             dgConsultarExame.Columns[0].HeaderText = "Número do Exame";
             dgConsultarExame.Columns[1].HeaderText = "Paciente"; //Nome paciente tabela paciente
@@ -75,7 +75,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //FORMATAR DG EXAME HEMATOLOGIA
-        private void FormatarDgConsultarExameHema()
+        public void FormatarDgConsultarExameHema()
         {
             dgConsultarExame.Columns[0].HeaderText = "Número do Exame";
             dgConsultarExame.Columns[1].HeaderText = "Paciente"; //Nome paciente tabela paciente
@@ -133,7 +133,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO FORMATAR DG EXAME URINALISE
-        private void FormatarDgConsultarExameUri()
+        public void FormatarDgConsultarExameUri()
         {
             dgConsultarExame.Columns[0].HeaderText = "Número do Exame";
             dgConsultarExame.Columns[1].HeaderText = "Paciente"; //Nome paciente tabela paciente
@@ -174,7 +174,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE BIOQUIMICA
-        private void rbBio_CheckedChanged(object sender, EventArgs e)
+        public void rbBio_CheckedChanged(object sender, EventArgs e)
         {
             btnAlterarBio.Enabled = true;
             btnLocalizarBio.Enabled = true;
@@ -194,7 +194,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE HEMATOLOGIA
-        private void rbHematologia_CheckedChanged(object sender, EventArgs e)
+        public void rbHematologia_CheckedChanged(object sender, EventArgs e)
         {
             btnAlterarHema.Enabled = true;
             btnLocalizarHema.Enabled = true;
@@ -214,7 +214,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE MICROBIOLOGIA
-        private void rbMicrobiologia_CheckedChanged(object sender, EventArgs e)
+        public void rbMicrobiologia_CheckedChanged(object sender, EventArgs e)
         {
             btnAlterarMicro.Enabled = true;
             btnLocalizarMicro.Enabled = true;
@@ -234,7 +234,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE URINALISE
-        private void rbUrinalise_CheckedChanged(object sender, EventArgs e)
+        public void rbUrinalise_CheckedChanged(object sender, EventArgs e)
         {
             btnAlterarUri.Enabled = true;
             btnLocalizarUri.Enabled = true;
@@ -254,13 +254,13 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //AO CLIKAR NA GRID JOGAR PARA O CAMPO ID exame
-        private void dgConsultarExame_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgConsultarExame_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtId.Text = System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[0].Value);
         }
 
         //BOTAO FAZER BUSCA EXAME BIOQUIMICA
-        private void btnLocalizarBio_Click(object sender, EventArgs e)
+        public void btnLocalizarBio_Click(object sender, EventArgs e)
         {
             //FAZER A BUSCA PELO NOME
             dgConsultarExame.ClearSelection();
@@ -296,7 +296,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         // METODO LISTAR EXAME BIOQUIMICA
-        private void ListarBio()
+        public void ListarBio()
         {
             DataTable dt = new DataTable();
             SqlDataAdapter da = default(SqlDataAdapter);
@@ -324,7 +324,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO PESQUISAR EXAME HEMATOLOGIA
-        private void btnLocalizarHema_Click(object sender, EventArgs e)
+        public void btnLocalizarHema_Click(object sender, EventArgs e)
         {
             dgConsultarExame.ClearSelection();
             //SE TXT NOME ESTIVER VAZIO FACA 
@@ -358,7 +358,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO LISTAR EXAME HEMATOLOGIA
-        private void ListarHema()
+        public void ListarHema()
         {
             DataTable dt = new DataTable();
             SqlDataAdapter da = default(SqlDataAdapter);
@@ -386,7 +386,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAOLOCALIZAR EXAME MICROBIOLOGIA
-        private void btnLocalizarMicro_Click(object sender, EventArgs e)
+        public void btnLocalizarMicro_Click(object sender, EventArgs e)
         {
             dgConsultarExame.ClearSelection();
 
@@ -421,7 +421,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO LISTAR EXAME MICRO
-        private void ListarMicro()
+        public void ListarMicro()
         {
             DataTable dt = new DataTable();
             SqlDataAdapter da = default(SqlDataAdapter);
@@ -448,7 +448,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO LOCALIZAR EXAME URINALISE
-        private void btnLocalizarUri_Click(object sender, EventArgs e)
+        public void btnLocalizarUri_Click(object sender, EventArgs e)
         {
             dgConsultarExame.ClearSelection();
 
@@ -483,7 +483,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO LISTAR EXAME URINALISE
-        private void ListarUri()
+        public void ListarUri()
         {
             DataTable dt = new DataTable();
             SqlDataAdapter da = default(SqlDataAdapter);
@@ -510,7 +510,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO ALTERAR EXAME BIOQUIMICA
-        private void btnAlterarBio_Click(object sender, EventArgs e)
+        public void btnAlterarBio_Click(object sender, EventArgs e)
         {
             frm_Bioquimica frm_Bioquimica = new frm_Bioquimica();
             //ABRIR O FORM DE CAD BIOQUIMICA
@@ -549,7 +549,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO PARA HABILITAR CAMPOS NO FORM BIOQUIMICA PARA PODER ALTERAR
-        private void habilitarCamposParaeditarBio()
+        public void habilitarCamposParaeditarBio()
         {
             frm_Bioquimica frm_Bioquimica = new frm_Bioquimica();
             frm_Bioquimica.txtId.Enabled = true;
@@ -661,7 +661,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO EDITAR EXAME MICROBIOLOGIA
-        private void btnAlterarMicro_Click(object sender, EventArgs e)
+        public void btnAlterarMicro_Click(object sender, EventArgs e)
         {
             frm_Microbiologia frm_Microbiologia = new frm_Microbiologia();
             //ABRIR O FORM DE CAD MICROBIOLOGIA
@@ -686,7 +686,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //METODO PARA HABILITAR CAMPOS NO FORM HEMATOLOGIA PARA PODER ALTERAR
-        private void habilitarCamposParaeditarmicro()
+        public void habilitarCamposParaeditarmicro()
         {
             frm_Microbiologia frm_Microbiologia = new frm_Microbiologia();
             frm_Microbiologia.txtNome.Enabled = false;
@@ -706,7 +706,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO ALTERAR EXAME URINALISE
-        private void btnAlterarUri_Click(object sender, EventArgs e)
+        public void btnAlterarUri_Click(object sender, EventArgs e)
         {
             frm_Urinalise frm_Urinalise = new frm_Urinalise();
             //ABRIR O FORM DE CAD URINALISE
@@ -745,7 +745,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
 
 
         //METODO PARA HABILITAR CAMPOS NO FORM URINALISE PARA PODER ALTERAR
-        private void habilitarCamposParaeditarUri()
+        public void habilitarCamposParaeditarUri()
         {
             frm_Urinalise frm_Urinalise = new frm_Urinalise();
             frm_Urinalise.txtNome.Enabled = false;
@@ -777,7 +777,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO EXCLUIR EXAME BIOQUIMICA
-        private void btnExcluirBio_Click(object sender, EventArgs e)
+        public void btnExcluirBio_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = default(SqlCommand);
             //SE O TXTID FOR DIFERENTE DE VAZIO FACA
@@ -814,7 +814,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO EXCLUIR EXAME HEMATOLOGIA
-        private void btnExcluirHema_Click(object sender, EventArgs e)
+        public void btnExcluirHema_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = default(SqlCommand);
             //SE O TXTID FOR DIFERENTE DE VAZIO FACA
@@ -851,7 +851,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO EXCLUIR EXAME MICRO
-        private void btnExcluirMicro_Click(object sender, EventArgs e)
+        public void btnExcluirMicro_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = default(SqlCommand);
             //SE O TXTID FOR DIFERENTE DE VAZIO FACA
@@ -891,7 +891,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         }
 
         //BOTAO EXCLUIR EXAME URINALISE
-        private void btnExcluirUri_Click(object sender, EventArgs e)
+        public void btnExcluirUri_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = default(SqlCommand);
             //SE O TXTID FOR DIFERENTE DE VAZIO FACA
