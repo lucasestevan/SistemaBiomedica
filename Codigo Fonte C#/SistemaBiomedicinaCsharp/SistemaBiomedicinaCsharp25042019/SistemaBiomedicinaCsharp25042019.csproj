@@ -123,17 +123,35 @@
     <Compile Include="Apresentacao\frm_Microbiologia.Designer.cs">
       <DependentUpon>frm_Microbiologia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apresentacao\frm_telaImpressao.cs">
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoBioquimica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Apresentacao\frm_telaImpressao.Designer.cs">
-      <DependentUpon>frm_telaImpressao.cs</DependentUpon>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoBioquimica.Designer.cs">
+      <DependentUpon>frm_ImpressaoBioquimica.cs</DependentUpon>
     </Compile>
     <Compile Include="Apresentacao\frm_Urinalise.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Apresentacao\frm_Urinalise.Designer.cs">
       <DependentUpon>frm_Urinalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoHematologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoHematologia.Designer.cs">
+      <DependentUpon>frm_ImpressaoHematologia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoMicrobiologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoMicrobiologia.Designer.cs">
+      <DependentUpon>frm_ImpressaoMicrobiologia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoUrinalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Impressao\frm_ImpressaoUrinalise.Designer.cs">
+      <DependentUpon>frm_ImpressaoUrinalise.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Estaticos.cs" />
     <Compile Include="Program.cs" />
@@ -166,13 +184,25 @@
     <EmbeddedResource Include="Apresentacao\frm_Microbiologia.resx">
       <DependentUpon>frm_Microbiologia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apresentacao\frm_telaImpressao.resx">
-      <DependentUpon>frm_telaImpressao.cs</DependentUpon>
+    <EmbeddedResource Include="Apresentacao\ImpressaoUri .rdlc" />
+    <EmbeddedResource Include="Apresentacao\ImpressaoMicro.rdlc" />
+    <EmbeddedResource Include="Apresentacao\ImpressaoHema.rdlc" />
+    <EmbeddedResource Include="Apresentacao\Impressao\frm_ImpressaoBioquimica.resx">
+      <DependentUpon>frm_ImpressaoBioquimica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\frm_Urinalise.resx">
       <DependentUpon>frm_Urinalise.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apresentacao\Impressao.rdlc" />
+    <EmbeddedResource Include="Apresentacao\ImpressaoBio.rdlc" />
+    <EmbeddedResource Include="Apresentacao\Impressao\frm_ImpressaoHematologia.resx">
+      <DependentUpon>frm_ImpressaoHematologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Impressao\frm_ImpressaoMicrobiologia.resx">
+      <DependentUpon>frm_ImpressaoMicrobiologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Impressao\frm_ImpressaoUrinalise.resx">
+      <DependentUpon>frm_ImpressaoUrinalise.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

@@ -27,6 +27,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         private void DesabilitarCampo()
         {
             txtNome.Enabled = false;
+            txtSenha.Enabled = false;
             mskCpf.Enabled = false;
             btnSalvar.Enabled = false;
             btnEditar.Enabled = false;
@@ -48,6 +49,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             txtNome.Text = "";
             mskCpf.Text = "";
             cmbNivel.Text = "";
+            txtSenha.Text = "";
         }
 
         //METODO HABILITAR CAMPOS 
@@ -58,6 +60,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnSalvar.Enabled = true;
             btnPesquisar.Enabled = true;
             cmbNivel.Enabled = true;
+            txtSenha.Enabled = true;
         }
 
         //BOTAO PESQUISAR
@@ -126,10 +129,11 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         //METODO FORMATAR DG COLABORADOR
         private void FormatarDgColaborador()
         {
-            dgColaborador.Columns[0].Visible = false;
+            dgColaborador.Columns[0].Visible = false; //id
             dgColaborador.Columns[1].HeaderText = "Nome";
             dgColaborador.Columns[2].HeaderText = "CPF";
             dgColaborador.Columns[3].HeaderText = "Nível";
+            dgColaborador.Columns[4].Visible = false; // senha
         }
 
         //BOTAO SALVAR
@@ -139,6 +143,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
 
             if (mskCpf.Text != "   .   .   .  " &&
                     txtNome.Text != "" &&
+                    txtSenha.Text != "" &&
                     cmbNivel.Text != "")
             {
                 try
@@ -147,6 +152,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                     cmd = new SqlCommand("sp_salvarEstagiario", Modelo.Estaticos.con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+                    cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
                     cmd.Parameters.AddWithValue("@cpf", mskCpf.Text);
                     cmd.Parameters.AddWithValue("@nivel", cmbNivel.Text);
                     cmd.Parameters.Add("@mensagem", SqlDbType.VarChar, 100).Direction = (System.Data.ParameterDirection)2;
@@ -178,6 +184,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             SqlCommand cmd = default(SqlCommand);
             if (mskCpf.Text != "" &&
                     txtNome.Text != "" &&
+                    txtSenha.Text != "" &&
                     cmbNivel.Text != "")
             {
                 try
@@ -187,6 +194,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id_colaborador", txtId.Text);
                     cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+                    cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
                     cmd.Parameters.AddWithValue("@cpf", mskCpf.Text);
                     cmd.Parameters.AddWithValue("@nivel", cmbNivel.Text);
                     cmd.Parameters.Add("@mensagem", SqlDbType.VarChar, 100).Direction = (System.Data.ParameterDirection)2;

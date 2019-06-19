@@ -8,10 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaBiomedicinaCsharp25042019.Apresentacao.Impressao;
 
 namespace SistemaBiomedicinaCsharp25042019.Apresentacao
 {
-    public partial class frm_ConsultaExame : Form 
+    public partial class frm_ConsultaExame : Form
     {
         public frm_ConsultaExame()
         {
@@ -36,8 +37,12 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnAlterarUri.Enabled = false;
             btnLocalizarUri.Enabled = false;
             btnExcluirHema.Enabled = false;
-            btnAlterarHema.Enabled = false;
+            btnAlterarHema.Enabled = false; 
             btnLocalizarHema.Enabled = false;
+            btnImprimirBio.Enabled = false;
+            btnImprimirHema.Enabled = false;
+            btnImprimirMicro.Enabled = false;
+            btnImprimirUri.Enabled = false;
         }
 
         // FORMATAR DG BIOQUIMICA
@@ -179,9 +184,11 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnAlterarBio.Enabled = true;
             btnLocalizarBio.Enabled = true;
             btnExcluirBio.Enabled = true;
+            btnImprimirBio.Enabled = true;
             btnAlterarBio.Visible = true;
             btnLocalizarBio.Visible = true;
             btnExcluirBio.Visible = true;
+            btnImprimirBio.Visible = true;
             btnExcluirMicro.Visible = false;
             btnAlterarMicro.Visible = false;
             btnLocalizarMicro.Visible = false;
@@ -191,6 +198,10 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnExcluirHema.Visible = false;
             btnAlterarHema.Visible = false;
             btnLocalizarHema.Visible = false;
+            btnImprimirHema.Visible = false;
+            btnImprimirMicro.Visible = false;
+            btnImprimirUri.Visible = false;
+
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE HEMATOLOGIA
@@ -199,9 +210,11 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnAlterarHema.Enabled = true;
             btnLocalizarHema.Enabled = true;
             btnExcluirHema.Enabled = true;
+            btnImprimirHema.Enabled = true;
             btnAlterarHema.Visible = true;
             btnLocalizarHema.Visible = true;
             btnExcluirHema.Visible = true;
+            btnImprimirHema.Visible = true;
             btnExcluirMicro.Visible = false;
             btnAlterarMicro.Visible = false;
             btnLocalizarMicro.Visible = false;
@@ -211,6 +224,9 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnExcluirUri.Visible = false;
             btnAlterarUri.Visible = false;
             btnLocalizarUri.Visible = false;
+            btnImprimirBio.Visible = false;
+            btnImprimirMicro.Visible = false;
+            btnImprimirUri.Visible = false;
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE MICROBIOLOGIA
@@ -219,9 +235,11 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnAlterarMicro.Enabled = true;
             btnLocalizarMicro.Enabled = true;
             btnExcluirMicro.Enabled = true;
+            btnImprimirMicro.Enabled = true;
             btnAlterarMicro.Visible = true;
             btnLocalizarMicro.Visible = true;
             btnExcluirMicro.Visible = true;
+            btnImprimirMicro.Visible = true;
             btnAlterarBio.Visible = false;
             btnExcluirBio.Visible = false;
             btnLocalizarBio.Visible = false;
@@ -231,6 +249,9 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnExcluirHema.Visible = false;
             btnAlterarHema.Visible = false;
             btnLocalizarHema.Visible = false;
+            btnImprimirBio.Visible = false;
+            btnImprimirHema.Visible = false;
+            btnImprimirUri.Visible = false;
         }
 
         //RADIO BUTON CHECADO HABILITAR BOTOES DE URINALISE
@@ -239,9 +260,11 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnAlterarUri.Enabled = true;
             btnLocalizarUri.Enabled = true;
             btnExcluirUri.Enabled = true;
+            btnImprimirUri.Enabled = true;
             btnAlterarUri.Visible = true;
             btnLocalizarUri.Visible = true;
             btnExcluirUri.Visible = true;
+            btnImprimirUri.Visible = true;
             btnExcluirMicro.Visible = false;
             btnAlterarMicro.Visible = false;
             btnLocalizarMicro.Visible = false;
@@ -251,6 +274,9 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             btnExcluirHema.Visible = false;
             btnAlterarHema.Visible = false;
             btnLocalizarHema.Visible = false;
+            btnImprimirBio.Visible = false;
+            btnImprimirHema.Visible = false;
+            btnImprimirMicro.Visible = false;
         }
 
         //AO CLIKAR NA GRID JOGAR PARA O CAMPO ID exame
@@ -288,7 +314,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro" , MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                    MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
                     Modelo.Estaticos.fechar();
                 }
             }
@@ -350,7 +376,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro" , MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                    MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
                     Modelo.Estaticos.fechar();
                 }
             }
@@ -380,7 +406,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro" , MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
                 Modelo.Estaticos.fechar();
             }
         }
@@ -413,7 +439,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro" , MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                    MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
                     Modelo.Estaticos.fechar();
                 }
             }
@@ -442,7 +468,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro" , MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
                 Modelo.Estaticos.fechar();
             }
         }
@@ -504,7 +530,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro" , MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                MessageBox.Show("Erro no metodo listar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
                 Modelo.Estaticos.fechar();
             }
         }
@@ -553,7 +579,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             frm_Bioquimica.txtIdcola.Text = System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[28].Value);//id_colaborador
         }
 
-        
+
         //BOTAO ALTERAR EXAME HEMATOLOGIA
         public void btnAlterarHema_Click(object sender, EventArgs e)
         {
@@ -633,7 +659,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             frm_Microbiologia.txtIdcola.Text = System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[15].Value);//id_colaborador
         }
 
-      
+
 
         //BOTAO ALTERAR EXAME URINALISE
         public void btnAlterarUri_Click(object sender, EventArgs e)
@@ -831,16 +857,143 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             }
         }
 
-        private void BtnImprimir_Click(object sender, EventArgs e)
+        //BOTAO IMPRIMIR BIOQUIMICA
+        private void BtnImprimirBio_Click(object sender, EventArgs e)
         {
-            frm_telaImpressao impressao = new frm_telaImpressao(//txtIdExame.Text); //txtIdExame.Text, txtIdExame.Text, txtIdExame.Text
-                System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value));
-              // System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value),
-              //System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value),
-              //System.Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value)
-               
-            impressao.Show();
+            DialogResult msg = MessageBox.Show("Imprimir Exame selecionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3);
+            //SE O ESCOLHER SIM FAÇA
+            if (msg == DialogResult.Yes)
+            {
+                Apresentacao.frm_ImpressaoBioquimica impressaoBio = new Apresentacao.frm_ImpressaoBioquimica();
+                //PEGA OQUE TA NA DATA GRID E MANDA PARA O ESTATICO E DPS PARA IMPRESSAO
+                Modelo.Estaticos.nome = Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value);
+                Modelo.Estaticos.datacol = Convert.ToString(dgConsultarExame.CurrentRow.Cells[25].Value);
+                Modelo.Estaticos.colaborador = Convert.ToString(dgConsultarExame.CurrentRow.Cells[2].Value);
+                Modelo.Estaticos.COLESTEROL = Convert.ToString(dgConsultarExame.CurrentRow.Cells[4].Value);
+                Modelo.Estaticos.TRI = Convert.ToString(dgConsultarExame.CurrentRow.Cells[5].Value);
+                Modelo.Estaticos.HDL = Convert.ToString(dgConsultarExame.CurrentRow.Cells[6].Value);
+                Modelo.Estaticos.LDL = Convert.ToString(dgConsultarExame.CurrentRow.Cells[7].Value);
+                Modelo.Estaticos.VI_DL = Convert.ToString(dgConsultarExame.CurrentRow.Cells[8].Value);
+                Modelo.Estaticos.DHE = Convert.ToString(dgConsultarExame.CurrentRow.Cells[9].Value);
+                Modelo.Estaticos.CREATINA = Convert.ToString(dgConsultarExame.CurrentRow.Cells[10].Value);
+                Modelo.Estaticos.TGO = Convert.ToString(dgConsultarExame.CurrentRow.Cells[11].Value);
+                Modelo.Estaticos.TGP = Convert.ToString(dgConsultarExame.CurrentRow.Cells[12].Value);
+                Modelo.Estaticos.BIL_D = Convert.ToString(dgConsultarExame.CurrentRow.Cells[13].Value);
+                Modelo.Estaticos.FERRO = Convert.ToString(dgConsultarExame.CurrentRow.Cells[14].Value);
+                Modelo.Estaticos.PROTEINA = Convert.ToString(dgConsultarExame.CurrentRow.Cells[15].Value);
+                Modelo.Estaticos.CLOR = Convert.ToString(dgConsultarExame.CurrentRow.Cells[16].Value);
+                Modelo.Estaticos.FAL = Convert.ToString(dgConsultarExame.CurrentRow.Cells[17].Value);
+                Modelo.Estaticos.CALCIO = Convert.ToString(dgConsultarExame.CurrentRow.Cells[18].Value);
+                Modelo.Estaticos.ALBUMINA = Convert.ToString(dgConsultarExame.CurrentRow.Cells[19].Value);
+                Modelo.Estaticos.CPK = Convert.ToString(dgConsultarExame.CurrentRow.Cells[20].Value);
+                Modelo.Estaticos.ACIDO_URICO = Convert.ToString(dgConsultarExame.CurrentRow.Cells[21].Value);
+                Modelo.Estaticos.DHL = Convert.ToString(dgConsultarExame.CurrentRow.Cells[22].Value);
+                Modelo.Estaticos.BHCQ = Convert.ToString(dgConsultarExame.CurrentRow.Cells[23].Value);
+                Modelo.Estaticos.PHOS = Convert.ToString(dgConsultarExame.CurrentRow.Cells[24].Value);
 
+                impressaoBio.ShowDialog();
+            }
+        }
+
+        //BOTAO IMPRIMIR EXAME HEMATOLOGIA
+        private void BtnImprimirHema_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("Imprimir Exame selecionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3);
+            //SE O ESCOLHER SIM FAÇA
+            if (msg == DialogResult.Yes)
+            {
+                Apresentacao.Impressao.frm_ImpressaoHematologia impressaoHema = new Apresentacao.Impressao.frm_ImpressaoHematologia();
+                //PEGA OQUE TA NA DATA GRID E MANDA PARA O ESTATICO E DPS PARA IMPRESSAO
+                Modelo.Estaticos.nomeHema = Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value);
+                Modelo.Estaticos.datacolHema = Convert.ToString(dgConsultarExame.CurrentRow.Cells[28].Value);
+                Modelo.Estaticos.colaboradorHema = Convert.ToString(dgConsultarExame.CurrentRow.Cells[2].Value);
+                Modelo.Estaticos.Eritocitos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[4].Value);
+                Modelo.Estaticos.Hemoglobina = Convert.ToString(dgConsultarExame.CurrentRow.Cells[5].Value);
+                Modelo.Estaticos.Hematocrito = Convert.ToString(dgConsultarExame.CurrentRow.Cells[6].Value);
+                Modelo.Estaticos.VCM = Convert.ToString(dgConsultarExame.CurrentRow.Cells[7].Value);
+                Modelo.Estaticos.HCM = Convert.ToString(dgConsultarExame.CurrentRow.Cells[8].Value);
+                Modelo.Estaticos.CHCM = Convert.ToString(dgConsultarExame.CurrentRow.Cells[9].Value);
+                Modelo.Estaticos.Plaquetas = Convert.ToString(dgConsultarExame.CurrentRow.Cells[10].Value);
+                Modelo.Estaticos.Reticulocitos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[11].Value);
+                Modelo.Estaticos.Leucocitos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[12].Value);
+                Modelo.Estaticos.Mielocitos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[13].Value);
+                Modelo.Estaticos.Metamielocitos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[14].Value);
+                Modelo.Estaticos.Bastonetes = Convert.ToString(dgConsultarExame.CurrentRow.Cells[15].Value);
+                Modelo.Estaticos.Segmentados = Convert.ToString(dgConsultarExame.CurrentRow.Cells[16].Value);
+                Modelo.Estaticos.Eosinofilos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[17].Value);
+                Modelo.Estaticos.Basofilos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[18].Value);
+                Modelo.Estaticos.Linfoticos_Tipicos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[19].Value);
+                Modelo.Estaticos.Linfoticos_Atipicos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[20].Value);
+                Modelo.Estaticos.Monocitos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[21].Value);
+                Modelo.Estaticos.Outras = Convert.ToString(dgConsultarExame.CurrentRow.Cells[22].Value);
+                Modelo.Estaticos.Observacao = Convert.ToString(dgConsultarExame.CurrentRow.Cells[23].Value);
+                Modelo.Estaticos.ABO = Convert.ToString(dgConsultarExame.CurrentRow.Cells[24].Value);
+                Modelo.Estaticos.RH = Convert.ToString(dgConsultarExame.CurrentRow.Cells[25].Value);
+                Modelo.Estaticos.VHS = Convert.ToString(dgConsultarExame.CurrentRow.Cells[26].Value);
+                Modelo.Estaticos.Falci = Convert.ToString(dgConsultarExame.CurrentRow.Cells[27].Value);
+                impressaoHema.ShowDialog();
+            }
+        }
+
+        //BOTAO IMPRIMIR MICROBIOLOGIA
+        private void BtnImprimirMicro_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("Imprimir Exame selecionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3);
+            //SE O ESCOLHER SIM FAÇA
+            if (msg == DialogResult.Yes)
+            {
+                Apresentacao.Impressao.frm_ImpressaoMicrobiologia impressaoMicro = new Apresentacao.Impressao.frm_ImpressaoMicrobiologia();
+                //PEGA OQUE TA NA DATA GRID E MANDA PARA O ESTATICO E DPS PARA IMPRESSAO
+                Modelo.Estaticos.nomeMicro = Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value);
+                Modelo.Estaticos.datacolMicro = Convert.ToString(dgConsultarExame.CurrentRow.Cells[12].Value);
+                Modelo.Estaticos.colaboradorMicro = Convert.ToString(dgConsultarExame.CurrentRow.Cells[2].Value);
+                Modelo.Estaticos.Material_utilizado = Convert.ToString(dgConsultarExame.CurrentRow.Cells[4].Value);
+                Modelo.Estaticos.Gram = Convert.ToString(dgConsultarExame.CurrentRow.Cells[5].Value);
+                Modelo.Estaticos.Micro1 = Convert.ToString(dgConsultarExame.CurrentRow.Cells[6].Value);
+                Modelo.Estaticos.C_Col = Convert.ToString(dgConsultarExame.CurrentRow.Cells[7].Value);
+                Modelo.Estaticos.Micro2 = Convert.ToString(dgConsultarExame.CurrentRow.Cells[8].Value);
+                Modelo.Estaticos.C_Col2 = Convert.ToString(dgConsultarExame.CurrentRow.Cells[9].Value);
+                Modelo.Estaticos.Baar = Convert.ToString(dgConsultarExame.CurrentRow.Cells[10].Value);
+                Modelo.Estaticos.Gram_2 = Convert.ToString(dgConsultarExame.CurrentRow.Cells[11].Value);
+                impressaoMicro.ShowDialog();
+            }
+        }
+
+        //BOTAO IMPRIMIR EXAME URINALISE
+        private void BtnImprimirUri_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("Imprimir Exame selecionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3);
+            //SE O ESCOLHER SIM FAÇA
+            if (msg == DialogResult.Yes)
+            {
+                Apresentacao.Impressao.frm_ImpressaoUrinalise impressaoUri = new Apresentacao.Impressao.frm_ImpressaoUrinalise();
+                //PEGA OQUE TA NA DATA GRID E MANDA PARA O ESTATICO E DPS PARA IMPRESSAO
+                Modelo.Estaticos.nomeUri = Convert.ToString(dgConsultarExame.CurrentRow.Cells[1].Value);
+                Modelo.Estaticos.datacolUri = Convert.ToString(dgConsultarExame.CurrentRow.Cells[25].Value);
+                Modelo.Estaticos.colaboradorUri = Convert.ToString(dgConsultarExame.CurrentRow.Cells[2].Value);
+                Modelo.Estaticos.Cor = Convert.ToString(dgConsultarExame.CurrentRow.Cells[4].Value);
+                Modelo.Estaticos.Aspecto = Convert.ToString(dgConsultarExame.CurrentRow.Cells[5].Value);
+                Modelo.Estaticos.Densidade = Convert.ToString(dgConsultarExame.CurrentRow.Cells[6].Value);
+                Modelo.Estaticos.Reacao_pH = Convert.ToString(dgConsultarExame.CurrentRow.Cells[7].Value);
+                Modelo.Estaticos.Proteinas = Convert.ToString(dgConsultarExame.CurrentRow.Cells[8].Value);
+                Modelo.Estaticos.Glicose = Convert.ToString(dgConsultarExame.CurrentRow.Cells[9].Value);
+                Modelo.Estaticos.Urobiolinogenio = Convert.ToString(dgConsultarExame.CurrentRow.Cells[10].Value);
+                Modelo.Estaticos.Bilirrubinas = Convert.ToString(dgConsultarExame.CurrentRow.Cells[11].Value);
+                Modelo.Estaticos.Corpos_Cetonicos = Convert.ToString(dgConsultarExame.CurrentRow.Cells[12].Value);
+                Modelo.Estaticos.HemoglobinaBio = Convert.ToString(dgConsultarExame.CurrentRow.Cells[13].Value);
+                Modelo.Estaticos.Nitrito = Convert.ToString(dgConsultarExame.CurrentRow.Cells[14].Value);
+                Modelo.Estaticos.Celulas_Epiteliais = Convert.ToString(dgConsultarExame.CurrentRow.Cells[15].Value);
+                Modelo.Estaticos.LeucocitosBio = Convert.ToString(dgConsultarExame.CurrentRow.Cells[16].Value);
+                Modelo.Estaticos.Hemacias = Convert.ToString(dgConsultarExame.CurrentRow.Cells[17].Value);
+                Modelo.Estaticos.Bacterias = Convert.ToString(dgConsultarExame.CurrentRow.Cells[18].Value);
+                Modelo.Estaticos.Cilindros = Convert.ToString(dgConsultarExame.CurrentRow.Cells[19].Value);
+                Modelo.Estaticos.Cristais = Convert.ToString(dgConsultarExame.CurrentRow.Cells[20].Value);
+                Modelo.Estaticos.Filamentos_de_muco = Convert.ToString(dgConsultarExame.CurrentRow.Cells[21].Value);
+                Modelo.Estaticos.Trinch = Convert.ToString(dgConsultarExame.CurrentRow.Cells[22].Value);
+                Modelo.Estaticos.Outros_Elementos1 = Convert.ToString(dgConsultarExame.CurrentRow.Cells[23].Value);
+                Modelo.Estaticos.Outros_Elementos2 = Convert.ToString(dgConsultarExame.CurrentRow.Cells[24].Value);
+                impressaoUri.ShowDialog();
+            }
         }
     }
 }

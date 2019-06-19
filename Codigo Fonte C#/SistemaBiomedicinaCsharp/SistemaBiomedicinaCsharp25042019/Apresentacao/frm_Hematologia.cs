@@ -67,6 +67,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         {
             HabilitarCampo();
             LimparCampos();
+            btnNovo.Enabled = false;
         }
 
         //METODO LIMPAR CAMPOS
@@ -110,8 +111,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         //METODO HABILITAR CAMPOS
         public void HabilitarCampo()
         {
-            txtNome.Enabled = true;
-            txtCola.Enabled = true;
+            
             txtNdia.Enabled = true;
             txterit.Enabled = true;
             txthb.Enabled = true;
@@ -259,6 +259,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                     LimparCampos();
                     DesabilitarCampos();
                     btnSalvar.Enabled = false;
+                    btnNovo.Enabled = true;
                 }
                 catch (Exception ex)
                 {

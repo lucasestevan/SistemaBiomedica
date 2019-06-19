@@ -29,27 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Login));
-            this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(84, 223);
-            this.txtSenha.Mask = "000,000,000,00";
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(85, 20);
-            this.txtSenha.TabIndex = 2;
             // 
             // btnEntrar
             // 
@@ -120,15 +111,26 @@
             this.PictureBox1.TabIndex = 16;
             this.PictureBox1.TabStop = false;
             // 
+            // txtSenha
+            // 
+            this.txtSenha.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSenha.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.txtSenha.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtSenha.Location = new System.Drawing.Point(84, 222);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(127, 20);
+            this.txtSenha.TabIndex = 2;
+            // 
             // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(271, 376);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.PictureBox1);
@@ -148,13 +150,12 @@
         }
 
         #endregion
-
-        internal System.Windows.Forms.MaskedTextBox txtSenha;
         internal System.Windows.Forms.Button btnEntrar;
         internal System.Windows.Forms.PictureBox PictureBox2;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        internal System.Windows.Forms.TextBox txtSenha;
     }
 }

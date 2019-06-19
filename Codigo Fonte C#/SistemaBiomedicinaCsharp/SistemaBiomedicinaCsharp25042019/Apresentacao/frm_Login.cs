@@ -37,13 +37,14 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
             }
             else
             {
+                //CONECTAR NO BANCO E NA PROCEDURE LOGIN
                 SqlCommand cmd = new SqlCommand("login", Modelo.Estaticos.con);
                 try
                 {
                     Modelo.Estaticos.abrir();
                     cmd.CommandType = (System.Data.CommandType)4; //SE FOR IGUAL A 4 ELE CONSEGUIU ENCONTRAR A INFORMACAO
                     cmd.Parameters.AddWithValue("@nome", usuario);
-                    cmd.Parameters.AddWithValue("@cpf", senha);
+                    cmd.Parameters.AddWithValue("@senha", senha);
                     cmd.Parameters.Add("@msg", SqlDbType.VarChar, 100).Direction = (System.Data.ParameterDirection)2;
 
                     //EXECUTAR NOSSA CONSULTA
@@ -78,6 +79,5 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                 }
             }
         }
-
     }
 }

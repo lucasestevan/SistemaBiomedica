@@ -63,7 +63,6 @@
             this.PrintDocument1 = new System.Drawing.Printing.PrintDocument();
             this.PrintPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.btnSelecionarColaMicro = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.btnAlterarM = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnSelecionarPacMicro = new System.Windows.Forms.Button();
@@ -115,6 +114,7 @@
             // txtNdia
             // 
             this.txtNdia.Location = new System.Drawing.Point(292, 121);
+            this.txtNdia.MaxLength = 4;
             this.txtNdia.Name = "txtNdia";
             this.txtNdia.Size = new System.Drawing.Size(38, 20);
             this.txtNdia.TabIndex = 4;
@@ -140,73 +140,73 @@
             // 
             // txtMat
             // 
-            this.txtMat.Location = new System.Drawing.Point(82, 191);
+            this.txtMat.Location = new System.Drawing.Point(26, 191);
             this.txtMat.Multiline = true;
             this.txtMat.Name = "txtMat";
-            this.txtMat.Size = new System.Drawing.Size(44, 20);
+            this.txtMat.Size = new System.Drawing.Size(63, 20);
             this.txtMat.TabIndex = 5;
             // 
             // txtGram
             // 
-            this.txtGram.Location = new System.Drawing.Point(148, 191);
+            this.txtGram.Location = new System.Drawing.Point(133, 191);
             this.txtGram.Multiline = true;
             this.txtGram.Name = "txtGram";
-            this.txtGram.Size = new System.Drawing.Size(44, 20);
+            this.txtGram.Size = new System.Drawing.Size(63, 20);
             this.txtGram.TabIndex = 6;
             // 
             // txtGram2
             // 
-            this.txtGram2.Location = new System.Drawing.Point(215, 191);
+            this.txtGram2.Location = new System.Drawing.Point(236, 191);
             this.txtGram2.Multiline = true;
             this.txtGram2.Name = "txtGram2";
-            this.txtGram2.Size = new System.Drawing.Size(44, 20);
+            this.txtGram2.Size = new System.Drawing.Size(63, 20);
             this.txtGram2.TabIndex = 7;
             // 
             // txtMicr1
             // 
-            this.txtMicr1.Location = new System.Drawing.Point(281, 191);
+            this.txtMicr1.Location = new System.Drawing.Point(334, 191);
             this.txtMicr1.Multiline = true;
             this.txtMicr1.Name = "txtMicr1";
-            this.txtMicr1.Size = new System.Drawing.Size(44, 20);
+            this.txtMicr1.Size = new System.Drawing.Size(63, 20);
             this.txtMicr1.TabIndex = 8;
             // 
             // txtCcol
             // 
-            this.txtCcol.Location = new System.Drawing.Point(82, 254);
+            this.txtCcol.Location = new System.Drawing.Point(26, 254);
             this.txtCcol.Multiline = true;
             this.txtCcol.Name = "txtCcol";
-            this.txtCcol.Size = new System.Drawing.Size(44, 20);
+            this.txtCcol.Size = new System.Drawing.Size(63, 20);
             this.txtCcol.TabIndex = 9;
             // 
             // txtMicr2
             // 
-            this.txtMicr2.Location = new System.Drawing.Point(148, 254);
+            this.txtMicr2.Location = new System.Drawing.Point(133, 254);
             this.txtMicr2.Multiline = true;
             this.txtMicr2.Name = "txtMicr2";
-            this.txtMicr2.Size = new System.Drawing.Size(44, 20);
+            this.txtMicr2.Size = new System.Drawing.Size(63, 20);
             this.txtMicr2.TabIndex = 10;
             // 
             // txtCcol2
             // 
-            this.txtCcol2.Location = new System.Drawing.Point(215, 254);
+            this.txtCcol2.Location = new System.Drawing.Point(236, 254);
             this.txtCcol2.Multiline = true;
             this.txtCcol2.Name = "txtCcol2";
-            this.txtCcol2.Size = new System.Drawing.Size(44, 20);
+            this.txtCcol2.Size = new System.Drawing.Size(63, 20);
             this.txtCcol2.TabIndex = 11;
             // 
             // txtBaar
             // 
-            this.txtBaar.Location = new System.Drawing.Point(281, 254);
+            this.txtBaar.Location = new System.Drawing.Point(334, 254);
             this.txtBaar.Multiline = true;
             this.txtBaar.Name = "txtBaar";
-            this.txtBaar.Size = new System.Drawing.Size(44, 20);
+            this.txtBaar.Size = new System.Drawing.Size(63, 20);
             this.txtBaar.TabIndex = 12;
             // 
             // Label6
             // 
             this.Label6.AutoSize = true;
             this.Label6.BackColor = System.Drawing.Color.Transparent;
-            this.Label6.Location = new System.Drawing.Point(79, 175);
+            this.Label6.Location = new System.Drawing.Point(23, 175);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(30, 13);
             this.Label6.TabIndex = 133;
@@ -216,7 +216,7 @@
             // 
             this.Label5.AutoSize = true;
             this.Label5.BackColor = System.Drawing.Color.Transparent;
-            this.Label5.Location = new System.Drawing.Point(145, 175);
+            this.Label5.Location = new System.Drawing.Point(130, 175);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(39, 13);
             this.Label5.TabIndex = 134;
@@ -226,7 +226,7 @@
             // 
             this.Label8.AutoSize = true;
             this.Label8.BackColor = System.Drawing.Color.Transparent;
-            this.Label8.Location = new System.Drawing.Point(212, 175);
+            this.Label8.Location = new System.Drawing.Point(233, 175);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(39, 13);
             this.Label8.TabIndex = 135;
@@ -236,7 +236,7 @@
             // 
             this.Label7.AutoSize = true;
             this.Label7.BackColor = System.Drawing.Color.Transparent;
-            this.Label7.Location = new System.Drawing.Point(278, 175);
+            this.Label7.Location = new System.Drawing.Point(331, 175);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(43, 13);
             this.Label7.TabIndex = 136;
@@ -246,7 +246,7 @@
             // 
             this.Label10.AutoSize = true;
             this.Label10.BackColor = System.Drawing.Color.Transparent;
-            this.Label10.Location = new System.Drawing.Point(79, 238);
+            this.Label10.Location = new System.Drawing.Point(23, 238);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(38, 13);
             this.Label10.TabIndex = 137;
@@ -256,7 +256,7 @@
             // 
             this.Label9.AutoSize = true;
             this.Label9.BackColor = System.Drawing.Color.Transparent;
-            this.Label9.Location = new System.Drawing.Point(146, 238);
+            this.Label9.Location = new System.Drawing.Point(131, 238);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(43, 13);
             this.Label9.TabIndex = 138;
@@ -266,7 +266,7 @@
             // 
             this.Label12.AutoSize = true;
             this.Label12.BackColor = System.Drawing.Color.Transparent;
-            this.Label12.Location = new System.Drawing.Point(212, 238);
+            this.Label12.Location = new System.Drawing.Point(233, 238);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(38, 13);
             this.Label12.TabIndex = 139;
@@ -276,7 +276,7 @@
             // 
             this.Label11.AutoSize = true;
             this.Label11.BackColor = System.Drawing.Color.Transparent;
-            this.Label11.Location = new System.Drawing.Point(278, 238);
+            this.Label11.Location = new System.Drawing.Point(331, 238);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(36, 13);
             this.Label11.TabIndex = 140;
@@ -387,22 +387,6 @@
             this.btnSelecionarColaMicro.UseVisualStyleBackColor = false;
             this.btnSelecionarColaMicro.Click += new System.EventHandler(this.btnSelecionarColaMicro_Click);
             // 
-            // btnImprimir
-            // 
-            this.btnImprimir.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImprimir.Image = global::SistemaBiomedicinaCsharp25042019.Properties.Resources.printer__1_;
-            this.btnImprimir.Location = new System.Drawing.Point(345, 233);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(75, 30);
-            this.btnImprimir.TabIndex = 124;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImprimir.UseVisualStyleBackColor = false;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
             // btnAlterarM
             // 
             this.btnAlterarM.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -492,7 +476,6 @@
             this.Controls.Add(this.Label14);
             this.Controls.Add(this.txtIdPac);
             this.Controls.Add(this.Label13);
-            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btnAlterarM);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnSelecionarPacMicro);
@@ -551,7 +534,6 @@
         internal System.Windows.Forms.Button btnSelecionarPacMicro;
         internal System.Windows.Forms.Button btnNovo;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.Button btnImprimir;
         internal System.Windows.Forms.Label Label13;
         internal System.Windows.Forms.Label Label14;
         internal System.Windows.Forms.Label Label15;

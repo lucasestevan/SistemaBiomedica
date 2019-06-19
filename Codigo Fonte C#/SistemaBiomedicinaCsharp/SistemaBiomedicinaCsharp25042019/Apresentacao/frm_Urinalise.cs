@@ -63,6 +63,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         {
             HabilitarCampo();
             LimparCampos();
+            btnNovo.Enabled = false;
         }
 
         //METODO LIMPAR CAMPOS URINALISE
@@ -239,6 +240,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                     LimparCampos();
                     DesabilitarCampos();
                     btnSalvar.Enabled = false;
+                    btnNovo.Enabled = true;
                 }
                 catch (Exception ex)
                 {

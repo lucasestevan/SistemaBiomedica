@@ -16,16 +16,10 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         public frm_Microbiologia()
         {
             InitializeComponent();
-            
-            
-
         }
-
-        
 
         public void frm_Microbiologia_Load(object sender, EventArgs e)
         {
-            
             DesabilitarCampo();
         }
 
@@ -55,6 +49,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
         {
             HabilitarCampo();
             LimparCampos();
+            btnNovo.Enabled = false;
         }
 
         //METODO LIMPAR OS CAMPOS
@@ -184,6 +179,7 @@ namespace SistemaBiomedicinaCsharp25042019.Apresentacao
                     LimparCampos();
                     DesabilitarCampo();
                     btncad.Enabled = false;
+                    btnNovo.Enabled = true;
                 }
                 catch (Exception ex)
                 {

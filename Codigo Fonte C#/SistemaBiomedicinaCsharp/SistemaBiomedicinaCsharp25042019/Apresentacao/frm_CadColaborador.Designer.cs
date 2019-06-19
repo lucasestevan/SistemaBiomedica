@@ -49,12 +49,14 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgColaborador)).BeginInit();
             this.SuspendLayout();
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(319, 77);
+            this.txtId.Location = new System.Drawing.Point(319, 109);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(31, 20);
             this.txtId.TabIndex = 112;
@@ -65,7 +67,7 @@
             this.Label5.AutoSize = true;
             this.Label5.BackColor = System.Drawing.Color.Transparent;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(255, 82);
+            this.Label5.Location = new System.Drawing.Point(255, 114);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(58, 15);
             this.Label5.TabIndex = 113;
@@ -80,17 +82,17 @@
             this.cmbNivel.Items.AddRange(new object[] {
             "ESTAGIÁRIO",
             "COORDENADOR"});
-            this.cmbNivel.Location = new System.Drawing.Point(60, 78);
+            this.cmbNivel.Location = new System.Drawing.Point(60, 110);
             this.cmbNivel.Name = "cmbNivel";
             this.cmbNivel.Size = new System.Drawing.Size(130, 21);
-            this.cmbNivel.TabIndex = 8;
+            this.cmbNivel.TabIndex = 9;
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(18, 82);
+            this.Label4.Location = new System.Drawing.Point(18, 114);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(39, 15);
             this.Label4.TabIndex = 111;
@@ -101,7 +103,7 @@
             this.lbltotal.AutoSize = true;
             this.lbltotal.BackColor = System.Drawing.Color.Transparent;
             this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(334, 279);
+            this.lbltotal.Location = new System.Drawing.Point(334, 325);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(9, 12);
             this.lbltotal.TabIndex = 110;
@@ -112,7 +114,7 @@
             this.Label3.AutoSize = true;
             this.Label3.BackColor = System.Drawing.Color.Transparent;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(298, 279);
+            this.Label3.Location = new System.Drawing.Point(298, 325);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(38, 13);
             this.Label3.TabIndex = 109;
@@ -120,11 +122,11 @@
             // 
             // mskCpf
             // 
-            this.mskCpf.Location = new System.Drawing.Point(60, 50);
+            this.mskCpf.Location = new System.Drawing.Point(60, 82);
             this.mskCpf.Mask = "000,000,000,00";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(85, 20);
-            this.mskCpf.TabIndex = 7;
+            this.mskCpf.TabIndex = 8;
             // 
             // btnSalvar
             // 
@@ -133,7 +135,7 @@
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Image = global::SistemaBiomedicinaCsharp25042019.Properties.Resources.save;
-            this.btnSalvar.Location = new System.Drawing.Point(383, 115);
+            this.btnSalvar.Location = new System.Drawing.Point(383, 119);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(97, 30);
             this.btnSalvar.TabIndex = 3;
@@ -148,7 +150,7 @@
             this.dgColaborador.AllowUserToDeleteRows = false;
             this.dgColaborador.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dgColaborador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgColaborador.Location = new System.Drawing.Point(17, 111);
+            this.dgColaborador.Location = new System.Drawing.Point(17, 157);
             this.dgColaborador.Name = "dgColaborador";
             this.dgColaborador.ReadOnly = true;
             this.dgColaborador.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -159,7 +161,8 @@
             // txtNome
             // 
             this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNome.Location = new System.Drawing.Point(60, 21);
+            this.txtNome.Location = new System.Drawing.Point(60, 27);
+            this.txtNome.MaxLength = 30;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 6;
@@ -169,7 +172,7 @@
             this.Label2.AutoSize = true;
             this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(26, 55);
+            this.Label2.Location = new System.Drawing.Point(26, 87);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(33, 15);
             this.Label2.TabIndex = 107;
@@ -180,7 +183,7 @@
             this.Label1.AutoSize = true;
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(15, 26);
+            this.Label1.Location = new System.Drawing.Point(15, 32);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(45, 15);
             this.Label1.TabIndex = 105;
@@ -193,7 +196,7 @@
             this.btnSelecionarHema.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarHema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionarHema.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionarHema.Image")));
-            this.btnSelecionarHema.Location = new System.Drawing.Point(383, 251);
+            this.btnSelecionarHema.Location = new System.Drawing.Point(383, 258);
             this.btnSelecionarHema.Name = "btnSelecionarHema";
             this.btnSelecionarHema.Size = new System.Drawing.Size(97, 30);
             this.btnSelecionarHema.TabIndex = 117;
@@ -209,7 +212,7 @@
             this.btnSelecionarUri.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarUri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionarUri.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionarUri.Image")));
-            this.btnSelecionarUri.Location = new System.Drawing.Point(383, 251);
+            this.btnSelecionarUri.Location = new System.Drawing.Point(383, 258);
             this.btnSelecionarUri.Name = "btnSelecionarUri";
             this.btnSelecionarUri.Size = new System.Drawing.Size(97, 30);
             this.btnSelecionarUri.TabIndex = 116;
@@ -225,7 +228,7 @@
             this.btnSelecionarBio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionarBio.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionarBio.Image")));
-            this.btnSelecionarBio.Location = new System.Drawing.Point(383, 251);
+            this.btnSelecionarBio.Location = new System.Drawing.Point(383, 258);
             this.btnSelecionarBio.Name = "btnSelecionarBio";
             this.btnSelecionarBio.Size = new System.Drawing.Size(97, 30);
             this.btnSelecionarBio.TabIndex = 115;
@@ -241,7 +244,7 @@
             this.btnSelecionarMicro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelecionarMicro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionarMicro.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionarMicro.Image")));
-            this.btnSelecionarMicro.Location = new System.Drawing.Point(383, 251);
+            this.btnSelecionarMicro.Location = new System.Drawing.Point(383, 258);
             this.btnSelecionarMicro.Name = "btnSelecionarMicro";
             this.btnSelecionarMicro.Size = new System.Drawing.Size(97, 30);
             this.btnSelecionarMicro.TabIndex = 114;
@@ -258,7 +261,7 @@
             this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::SistemaBiomedicinaCsharp25042019.Properties.Resources.research;
-            this.btnPesquisar.Location = new System.Drawing.Point(383, 68);
+            this.btnPesquisar.Location = new System.Drawing.Point(383, 72);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(97, 30);
             this.btnPesquisar.TabIndex = 2;
@@ -274,7 +277,7 @@
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Image = global::SistemaBiomedicinaCsharp25042019.Properties.Resources.delete;
-            this.btnExcluir.Location = new System.Drawing.Point(383, 209);
+            this.btnExcluir.Location = new System.Drawing.Point(383, 213);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(97, 30);
             this.btnExcluir.TabIndex = 5;
@@ -290,7 +293,7 @@
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Image = global::SistemaBiomedicinaCsharp25042019.Properties.Resources.edit__1_;
-            this.btnEditar.Location = new System.Drawing.Point(383, 162);
+            this.btnEditar.Location = new System.Drawing.Point(383, 166);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(97, 30);
             this.btnEditar.TabIndex = 4;
@@ -306,7 +309,7 @@
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Image = global::SistemaBiomedicinaCsharp25042019.Properties.Resources.add;
-            this.btnNovo.Location = new System.Drawing.Point(383, 21);
+            this.btnNovo.Location = new System.Drawing.Point(383, 25);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 30);
             this.btnNovo.TabIndex = 1;
@@ -315,12 +318,34 @@
             this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
+            // txtSenha
+            // 
+            this.txtSenha.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtSenha.Location = new System.Drawing.Point(60, 55);
+            this.txtSenha.MaxLength = 30;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(174, 20);
+            this.txtSenha.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 15);
+            this.label6.TabIndex = 119;
+            this.label6.Text = "Senha";
+            // 
             // frm_CadColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(493, 293);
+            this.ClientSize = new System.Drawing.Size(493, 346);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSelecionarHema);
             this.Controls.Add(this.btnSelecionarUri);
             this.Controls.Add(this.btnSelecionarBio);
@@ -376,5 +401,7 @@
         internal System.Windows.Forms.TextBox txtNome;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.TextBox txtSenha;
+        internal System.Windows.Forms.Label label6;
     }
 }

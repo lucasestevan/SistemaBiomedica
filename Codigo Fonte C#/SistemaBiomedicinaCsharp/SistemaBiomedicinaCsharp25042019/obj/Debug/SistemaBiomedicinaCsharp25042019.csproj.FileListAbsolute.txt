@@ -143,5 +143,8 @@ C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\
 C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\bin\Debug\pt-BR\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\bin\Debug\pt-BR\Microsoft.VisualStudio.GraphModel.resources.dll
 C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.exe.config
-C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.Apresentacao.frm_telaImpressao.resources
 C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.csproj.CopyComplete
+C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.Apresentacao.frm_ImpressaoBioquimica.resources
+C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.Apresentacao.Impressao.frm_ImpressaoHematologia.resources
+C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.Apresentacao.Impressao.frm_ImpressaoMicrobiologia.resources
+C:\Users\user\Desktop\teste\Sistemabio\Codigo Fonte C#\SistemaBiomedicinaCsharp\SistemaBiomedicinaCsharp25042019\obj\Debug\SistemaBiomedicinaCsharp25042019.Apresentacao.Impressao.frm_ImpressaoUrinalise.resources
